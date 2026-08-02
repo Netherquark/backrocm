@@ -1,0 +1,2 @@
+terminate called after throwing an instance of 'thrust::system::system_error'
+  what():  parallel_for failed: hipErrorInvalidDeviceFunction: invalid device function

@@ -1,0 +1,114 @@
+binary|status|execution_time_ms|error_category|raw_error
+applications_bitonic_sort|Failure|267|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Applications/bitonic_sort/main.hip:204
+applications_convolution|Failure|1637|Generic Error: "Non-Zero Exit Code (255)"|An error encountered: "invalid kernel file" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Applications/convolution/main.hip:242
+applications_floyd_warshall|Failure|280|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Applications/floyd_warshall/main.hip:234
+applications_histogram|Failure|298|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Applications/histogram/main.hip:139
+applications_monte_carlo_pi|Failure|276|Generic Error: "Non-Zero Exit Code (255)"|A hipRAND error occurred at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Applications/monte_carlo_pi/main.hip:153
+applications_prefix_sum|Failure|279|Generic Error: "Non-Zero Exit Code (255)"|
+hip_bandwidth|Success|386|None|
+hip_bit_extract|Failure|283|Generic Error: "Non-Zero Exit Code (255)"|
+hip_cooperative_groups|Failure|274|Generic Error: "Non-Zero Exit Code (255)"|An error encountered: "invalid kernel file" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/cooperative_groups/main.hip:204
+hip_device_globals|Failure|274|Generic Error: "Non-Zero Exit Code (255)"|An error encountered: "invalid kernel file" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/device_globals/main.hip:98
+hip_device_query|Success|35|None|
+hip_dynamic_shared|Failure|270|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/dynamic_shared/main.hip:130
+hip_events|Failure|300|Generic Error: "Non-Zero Exit Code (255)"|
+hip_gpu_arch|Failure|283|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/gpu_arch/main.hip:111
+hip_hello_world|Success|34|None|
+hip_hipify|Failure|298|Generic Error: "Non-Zero Exit Code (1)"|FAILED! h_out[0] = 0, expected:  2.61792
+hip_inline_assembly|Failure|285|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/inline_assembly/main.hip:106
+hip_matrix_multiplication|Failure|306|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/matrix_multiplication/main.hip:196
+hip_module_api|Failure|280|Generic Error: "Non-Zero Exit Code (255)"|An error encountered: "file not found" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/module_api/main.hip:75
+hip_moving_average|Failure|348|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/moving_average/main.hip:125
+hip_multi_gpu_data_transfer|Success|36|None|
+hip_occupancy|Failure|284|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/occupancy/main.hip:58
+hip_runtime_compilation|Success|525|None|
+hip_saxpy|Failure|284|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/saxpy/main.hip:86
+hip_shared_memory|Failure|272|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/shared_memory/main.hip:122
+hip_streams|Success|287|None|
+hip_texture_management|Failure|286|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/texture_management/main.hip:157
+hip_warp_shuffle|Failure|296|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/HIP-Basic/warp_shuffle/main.hip:131
+hipblas_gemm_strided_batched|Failure|14035|Tensile Error: "Missing TensileLibrary.dat"|
+hipblas_her|Failure|13000|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipblas_scal|Failure|13199|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipcub_device_radix_sort|Failure|273|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/hipCUB/device_radix_sort/main.hip:102
+hipcub_device_sum|Failure|272|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/hipCUB/device_sum/main.hip:68
+hipfft_multi_gpu|Success|35|None|
+hipfft_plan_d2z|Success|2651|None|
+hipfft_plan_z2z|Success|7934|None|
+hipsolver_getrf|Success|12900|None|
+hipsolver_syevd|Failure|13233|Generic Error: "Non-Zero Exit Code (255)"|
+hipsolver_syevdx|Failure|13127|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipsolver_syevj|Failure|13006|Generic Error: "Non-Zero Exit Code (255)"|
+hipsolver_syevj_batched|Failure|13097|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipsolver_sygvd|Failure|13609|Tensile Error: "Missing TensileLibrary.dat"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipsolver_sygvj|Failure|13352|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+reduction_example_v1|Failure|962|Runtime Error: "Invalid Device Function"|hipKernelLaunchGGL(invalid device function)
+reduction_example_v2|Failure|959|Runtime Error: "Invalid Device Function"|hipKernelLaunchGGL(invalid device function)
+reduction_example_v3|Failure|958|Runtime Error: "Invalid Device Function"|hipKernelLaunchGGL(invalid device function)
+reduction_example_v4|Failure|957|Runtime Error: "Invalid Device Function"|hipKernelLaunchGGL(invalid device function)
+reduction_example_v5|Failure|956|Runtime Error: "Invalid Device Function"|hipKernelLaunchGGL(invalid device function)
+reduction_example_v6|Failure|952|Runtime Error: "Invalid Device Function"|hipKernelLaunchGGL(invalid device function)
+reduction_example_v7|Failure|979|Runtime Error: "Invalid Device Function"|hipKernelLaunchGGL(invalid device function)
+reduction_example_v8|Failure|974|Runtime Error: "Invalid Device Function"|hipKernelLaunchGGL(invalid device function)
+reduction_example_v9|Failure|981|Runtime Error: "Invalid Device Function"|hipKernelLaunchGGL(invalid device function)
+rocblas_axpy|Failure|6837|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_dot|Failure|6770|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_gemm|Failure|7261|Tensile Error: "Missing TensileLibrary.dat"|
+rocblas_gemm_strided_batched|Failure|7237|Tensile Error: "Missing TensileLibrary.dat"|
+rocblas_gemv|Failure|6773|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_her|Failure|6762|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_nrm2|Failure|6810|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_scal|Failure|6769|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_swap|Failure|6837|Generic Error: "Non-Zero Exit Code (255)"|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocfft_callback|Failure|1132|Generic Error: "Non-Zero Exit Code (255)"|An error encountered: "invalid kernel file" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocFFT/callback/main.hip:138
+rocfft_complex_complex|Success|1117|None|
+rocfft_complex_real|Success|1895|None|
+rocfft_multi_gpu|Success|35|None|
+rocfft_real_complex|Success|1903|None|
+rocprim_block_sum|Success|272|None|
+rocprim_device_sum|Failure|277|Runtime Error: "Invalid Device Function"|An error encountered: "invalid device function" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocPRIM/device_sum/main.hip:80
+rocrand_simple_distributions_cpp|Failure|343|Generic Error: "Non-Zero Exit Code (134)"|terminate called after throwing an instance of 'rocrand_cpp::error'
+rocsolver_getf2|Success|13253|None|
+rocsolver_getri|Failure|14009|Tensile Error: "Missing TensileLibrary.dat"|
+rocsolver_syev|Failure|13358|Generic Error: "Non-Zero Exit Code (255)"|
+rocsolver_syev_batched|Failure|12991|Generic Error: "Non-Zero Exit Code (255)"|
+rocsolver_syev_strided_batched|Failure|13128|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_axpyi|Failure|10969|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_bsric0|Failure|11223|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/preconditioner/bsric0/main.cpp:178
+rocsparse_bsrilu0|Failure|11115|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/preconditioner/bsrilu0/main.cpp:170
+rocsparse_bsrmm|Success|11173|None|
+rocsparse_bsrmv|Success|11045|None|
+rocsparse_bsrsm|Failure|10933|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/level_3/bsrsm/main.cpp:215
+rocsparse_bsrsv|Failure|10881|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/level_2/bsrsv/main.cpp:192
+rocsparse_bsrxmv|Success|11156|None|
+rocsparse_coomv|Failure|11040|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_csric0|Failure|10981|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/preconditioner/csric0/main.cpp:151
+rocsparse_csrilu0|Failure|11032|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/preconditioner/csrilu0/main.cpp:149
+rocsparse_csritilu0|Failure|10903|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/preconditioner/csritilu0/main.cpp:166
+rocsparse_csritsv|Failure|11044|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_csrmm|Success|11151|None|
+rocsparse_csrmv|Success|11063|None|
+rocsparse_csrsm|Failure|11112|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/level_3/csrsm/main.cpp:206
+rocsparse_csrsv|Failure|11034|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/level_2/csrsv/main.cpp:150
+rocsparse_doti|Failure|10934|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_ellmv|Failure|11077|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_gebsrmm|Failure|11131|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_gebsrmv|Failure|11162|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_gemmi|Success|10958|None|
+rocsparse_gemvi|Success|10953|None|
+rocsparse_gpsv|Failure|11105|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_gthr|Failure|11014|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_gtsv|Failure|11014|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_roti|Failure|10941|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_sctr|Failure|11005|Generic Error: "Non-Zero Exit Code (255)"|
+rocsparse_sddmm|Success|11172|None|
+rocsparse_spitsv|Success|11046|None|
+rocsparse_spmv|Success|11185|None|
+rocsparse_spsm|Failure|11017|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/level_3/spsm/main.cpp:183
+rocsparse_spsv|Failure|11071|Generic Error: "Non-Zero Exit Code (255)"|rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/level_2/spsv/main.cpp:157
+rocthrust_device_ptr|Failure|340|Runtime Error: "Invalid Device Function"|terminate called after throwing an instance of 'thrust::system::system_error'
+rocthrust_norm|Failure|644|Runtime Error: "Invalid Device Function"|terminate called after throwing an instance of 'thrust::system::system_error'
+rocthrust_reduce_sum|Failure|640|Runtime Error: "Invalid Device Function"|terminate called after throwing an instance of 'thrust::system::system_error'
+rocthrust_remove_points|Success|2|None|
+rocthrust_saxpy|Failure|643|Runtime Error: "Invalid Device Function"|terminate called after throwing an instance of 'thrust::system::system_error'
+rocthrust_vectors|Success|276|None|

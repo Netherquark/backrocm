@@ -1,0 +1,1 @@
+rocSPARSE error encountered: "rocsparse_status_internal_error" at /builddir/build/BUILD/rocm-examples-6.4.2-build/rocm-examples-rocm-6.4.2/Libraries/rocSPARSE/level_3/csrsm/main.cpp:206
