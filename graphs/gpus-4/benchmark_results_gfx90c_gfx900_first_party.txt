@@ -1,0 +1,375 @@
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU$ rocm-bandwidth-test -a
+................
+          RocmBandwidthTest Version: 2.6.0
+
+          Launch Command is: rocm-bandwidth-test -a
+
+
+          Device: 0,  AMD Ryzen 5 PRO 5650U with Radeon Graphics
+          Device: 1,  AMD Radeon Graphics,  GPU-XX,  07:0.0
+
+          Inter-Device Access
+
+          D/D       0         1         
+
+          0         1         1         
+
+          1         1         1         
+
+
+          Inter-Device Numa Distance
+
+          D/D       0         1         
+
+          0         0         20        
+
+          1         20        0         
+
+
+          Unidirectional copy peak bandwidth GB/s
+
+          D/D       0           1           
+
+          0         N/A         19.907      
+
+          1         20.059      40.251      
+
+
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU$ HSA_OVERRIDE_GFX_VERSION=9.0.0 \
+rocm-bandwidth-test -a
+................
+          RocmBandwidthTest Version: 2.6.0
+
+          Launch Command is: rocm-bandwidth-test -a
+
+
+          Device: 0,  AMD Ryzen 5 PRO 5650U with Radeon Graphics
+          Device: 1,  AMD Radeon Graphics,  GPU-XX,  07:0.0
+
+          Inter-Device Access
+
+          D/D       0         1         
+
+          0         1         1         
+
+          1         1         1         
+
+
+          Inter-Device Numa Distance
+
+          D/D       0         1         
+
+          0         0         20        
+
+          1         20        0         
+
+
+          Unidirectional copy peak bandwidth GB/s
+
+          D/D       0           1           
+
+          0         N/A         18.867      
+
+          1         19.992      39.607      
+
+
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU$ hip_bandwidth \
+    --mode shmoo \
+    --memory pageable \
+    --trials 100
+Devices: [ 0 ]
+Measurement Sizes: [ 1024, 2048, 3072, 4096, 5120, 6144, 7168, 8192, 9216, 10240, 11264, 12288, 13312, 14336, 15360, 16384, 17408, 18432, 19456, 20480, 22528, 24576, 26624, 28672, 30720, 32768, 34816, 36864, 38912, 40960, 43008, 45056, 47104, 49152, 51200, 61440, 71680, 81920, 92160, 102400, 204800, 307200, 409600, 512000, 614400, 716800, 819200, 921600, 1024000, 1126400, 2174976, 3223552, 4272128, 5320704, 6369280, 7417856, 8466432, 9515008, 10563584, 11612160, 12660736, 13709312, 14757888, 15806464, 16855040, 18952192, 21049344, 23146496, 25243648, 27340800, 29437952, 31535104, 33632256, 37826560, 42020864, 46215168, 50409472, 54603776, 58798080, 62992384, 67186688 ]
+
+Measuring Host to Device Bandwidth: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Paged Bandwidth Host to Device (GB/s): [ 0.0879038, 0.153598, 0.193063, 0.148897, 0.354026, 0.481857, 0.610543, 0.63364, 0.769481, 0.925346, 1.00648, 1.13658, 0.929747, 0.60382, 1.29667, 1.41012, 1.00692, 1.03084, 1.07158, 1.12955, 1.1996, 1.23864, 1.34936, 1.50551, 1.61261, 1.70822, 1.83302, 1.95853, 2.0558, 1.83356, 2.19898, 2.08146, 2.1974, 2.24065, 2.36036, 2.63791, 2.61579, 2.89988, 3.64829, 3.96539, 4.76745, 5.3055, 6.26522, 6.14314, 6.94443, 7.05493, 7.21482, 7.22618, 7.56068, 9.93512, 11.0335, 11.7529, 12.2946, 13.0145, 13.2741, 13.6518, 13.7004, 14.2278, 13.8576, 14.5401, 15.1232, 14.4655, 14.4171, 15.3429, 15.6099, 15.3947, 17.1384, 17.3498, 18.4419, 18.0874, 17.5336, 17.8701, 17.5521, 17.8717, 17.9376, 17.9382, 18.3621, 18.5439, 18.0549, 18.5677, 18.4897 ]
+
+Measuring Device to Host Bandwidth: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Paged Bandwidth Device to Host (GB/s): [ 0.0526865, 0.0570191, 0.147184, 0.254168, 0.314838, 0.380469, 0.440937, 0.508433, 0.470826, 0.516698, 0.642819, 0.722844, 0.823782, 0.856754, 0.9457, 1.00167, 0.75482, 0.593807, 0.862591, 0.885623, 0.965305, 1.05327, 1.09917, 1.09796, 1.22764, 1.33284, 1.40598, 1.46958, 1.51882, 1.5197, 1.59626, 1.65526, 1.71463, 1.77687, 1.84525, 1.90876, 2.12626, 2.48417, 2.83378, 3.04488, 3.87078, 4.98963, 5.21992, 5.77503, 5.81069, 6.16882, 6.32718, 6.51865, 6.27238, 9.5379, 10.2789, 11.3232, 11.6429, 12.2224, 12.658, 12.8131, 12.9061, 13.1998, 13.9073, 13.9779, 13.6725, 14.3995, 14.3695, 15.5341, 15.1143, 15.705, 16.3994, 17.4308, 18.0682, 18.1314, 18.2626, 18.1737, 18.4479, 18.5446, 18.4189, 18.3498, 18.1483, 18.4274, 18.4981, 18.2682, 18.6539 ]
+
+Measuring Device to Device Bandwith: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Bandwidth Device to Device (GB/s): [ 0.187978, 0.388555, 1.50349, 2.02111, 2.26896, 1.00487, 1.48007, 0.877761, 2.37827, 3.074, 3.37491, 4.40882, 4.15738, 5.35579, 2.69331, 4.81458, 6.52396, 6.95025, 9.61455, 10.2876, 11.4448, 11.9268, 12.037, 13.3461, 13.1972, 16.7536, 18.0139, 16.9788, 20.4415, 22.1085, 22.702, 24.2996, 25.2853, 26.072, 24.3317, 31.3167, 34.8254, 38.424, 40.985, 46.6915, 64.0398, 47.6603, 32.1099, 26.1712, 22.545, 17.5802, 19.1094, 20.8008, 18.4911, 18.8499, 16.8486, 18.5276, 20.0565, 19.6766, 20.795, 20.7479, 20.6824, 20.6475, 20.7533, 20.6456, 19.6998, 20.5299, 20.5853, 20.4068, 20.6258, 20.7897, 20.7645, 20.7273, 20.3019, 20.6333, 20.5853, 20.5956, 20.6121, 20.3571, 20.4519, 20.4305, 20.023, 20.2985, 16.9985, 20.387, 19.6637 ]
+
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU$ hip_bandwidth \
+    --mode shmoo \
+    --memory pinned \
+    --trials 100
+Devices: [ 0 ]
+Measurement Sizes: [ 1024, 2048, 3072, 4096, 5120, 6144, 7168, 8192, 9216, 10240, 11264, 12288, 13312, 14336, 15360, 16384, 17408, 18432, 19456, 20480, 22528, 24576, 26624, 28672, 30720, 32768, 34816, 36864, 38912, 40960, 43008, 45056, 47104, 49152, 51200, 61440, 71680, 81920, 92160, 102400, 204800, 307200, 409600, 512000, 614400, 716800, 819200, 921600, 1024000, 1126400, 2174976, 3223552, 4272128, 5320704, 6369280, 7417856, 8466432, 9515008, 10563584, 11612160, 12660736, 13709312, 14757888, 15806464, 16855040, 18952192, 21049344, 23146496, 25243648, 27340800, 29437952, 31535104, 33632256, 37826560, 42020864, 46215168, 50409472, 54603776, 58798080, 62992384, 67186688 ]
+
+Measuring Host to Device Bandwidth: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Pinned Bandwidth Host to Device (GB/s): [ 0.259964, 1.02788, 1.54113, 2.05246, 1.80311, 2.01367, 2.47151, 2.56457, 2.1277, 3.84701, 0.953444, 0.907731, 4.49233, 5.18294, 5.42848, 5.0897, 1.34869, 1.46567, 1.55292, 1.62552, 1.76692, 1.90754, 2.06123, 2.17236, 2.29345, 2.42986, 2.48586, 2.658, 2.7448, 2.91001, 3.00631, 3.13542, 3.22238, 3.33039, 3.46208, 3.70496, 4.4056, 4.80307, 5.28025, 5.60019, 7.74202, 8.6563, 7.96826, 9.23157, 9.99426, 10.5849, 10.6702, 11.2405, 11.1143, 11.4635, 12.6098, 12.3676, 13.1003, 13.103, 13.2014, 13.001, 12.8869, 13.0059, 12.9611, 13.0222, 12.9991, 13.0219, 13.056, 13.0975, 13.0695, 13.0821, 13.1705, 13.2093, 13.0917, 13.1276, 13.1874, 13.081, 13.1105, 13.2504, 13.1711, 13.1635, 13.1233, 13.1235, 13.2239, 13.1907, 13.2252 ]
+
+Measuring Device to Host Bandwidth: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Pinned Bandwidth Device to Host (GB/s): [ 0.220555, 0.751637, 1.02842, 1.46924, 1.76293, 2.95056, 3.14263, 3.19749, 2.85071, 4.6704, 4.63411, 5.58335, 4.88295, 5.0489, 5.74006, 7.25196, 1.34599, 1.46153, 1.5363, 1.5858, 1.72453, 1.87755, 2.00339, 2.13898, 2.25026, 2.38324, 2.50249, 2.61087, 2.72108, 2.8432, 2.78522, 3.05752, 3.10046, 3.28637, 3.36854, 3.86854, 4.31344, 4.64719, 4.89822, 5.22817, 7.62779, 8.52724, 8.63303, 9.51903, 9.99757, 10.0818, 10.6951, 10.6944, 10.567, 10.8357, 11.8815, 12.2879, 12.4223, 12.6328, 12.7142, 12.7371, 12.8704, 12.8749, 12.9376, 12.8981, 12.8912, 12.9808, 13.0323, 13.0382, 13.0384, 13.0621, 13.1073, 13.0916, 13.0285, 13.1274, 13.1205, 13.1073, 13.1611, 13.1767, 13.1672, 13.1939, 13.1599, 13.1634, 13.1776, 13.1705, 13.1561 ]
+
+Measuring Device to Device Bandwith: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Bandwidth Device to Device (GB/s): [ 0.475051, 0.950106, 1.47649, 2.0695, 2.61561, 3.27589, 3.80944, 4.11733, 4.82389, 5.41152, 5.59568, 4.37361, 6.49794, 6.90825, 7.7153, 8.38326, 8.99294, 6.50749, 6.42878, 7.19035, 7.97985, 8.26809, 6.91364, 8.85324, 12.9666, 10.1271, 14.5291, 14.9719, 17.4072, 19.149, 20.2745, 20.1115, 20.0151, 20.98, 21.9668, 31.2163, 36.8599, 42.6374, 40.0692, 45.9607, 85.3792, 48.3213, 35.4499, 26.7699, 22.1589, 20.8245, 20.4795, 18.5633, 18.5995, 18.5223, 19.5597, 19.5214, 20.2437, 20.459, 20.2788, 20.1398, 20.3494, 20.4495, 20.0601, 19.9418, 20.4894, 20.4748, 20.4793, 20.2499, 20.2291, 20.5049, 20.6481, 20.3065, 20.5737, 20.2527, 18.8924, 19.1201, 20.6124, 20.1576, 20.4533, 20.3755, 20.0568, 20.1802, 20.0895, 20.0148, 20.2972 ]
+
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU$ HSA_OVERRIDE_GFX_VERSION=9.0.0 hip_bandwidth \
+    --mode shmoo \
+    --memory pageable \
+    --trials 100
+Devices: [ 0 ]
+Measurement Sizes: [ 1024, 2048, 3072, 4096, 5120, 6144, 7168, 8192, 9216, 10240, 11264, 12288, 13312, 14336, 15360, 16384, 17408, 18432, 19456, 20480, 22528, 24576, 26624, 28672, 30720, 32768, 34816, 36864, 38912, 40960, 43008, 45056, 47104, 49152, 51200, 61440, 71680, 81920, 92160, 102400, 204800, 307200, 409600, 512000, 614400, 716800, 819200, 921600, 1024000, 1126400, 2174976, 3223552, 4272128, 5320704, 6369280, 7417856, 8466432, 9515008, 10563584, 11612160, 12660736, 13709312, 14757888, 15806464, 16855040, 18952192, 21049344, 23146496, 25243648, 27340800, 29437952, 31535104, 33632256, 37826560, 42020864, 46215168, 50409472, 54603776, 58798080, 62992384, 67186688 ]
+
+Measuring Host to Device Bandwidth: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Paged Bandwidth Host to Device (GB/s): [ 0.0783296, 0.160351, 0.191631, 0.223687, 0.340889, 0.358637, 0.58274, 0.683113, 0.776346, 0.872779, 0.940596, 1.04714, 1.14242, 1.21492, 1.26769, 1.38322, 0.609168, 0.853372, 1.06025, 1.12696, 1.22539, 1.32065, 1.45114, 1.41936, 1.6357, 1.66199, 1.85814, 1.95616, 2.06071, 2.16045, 2.28812, 2.18972, 1.79802, 2.31854, 2.61403, 2.85018, 3.23347, 3.50091, 3.45332, 3.77722, 4.64208, 5.55267, 5.78492, 6.21046, 6.37657, 6.75944, 7.08535, 7.01344, 7.03759, 9.75098, 11.11, 11.6799, 12.295, 13.164, 13.3667, 13.5991, 13.453, 14.0261, 13.8612, 13.6483, 13.9723, 15.6044, 14.7856, 15.6917, 15.1943, 15.6085, 16.59, 18.1878, 18.0972, 17.4369, 17.8115, 18.2891, 18.2092, 18.0017, 18.1474, 18.2165, 18.1728, 18.3108, 18.2278, 18.5413, 18.5686 ]
+
+Measuring Device to Host Bandwidth: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Paged Bandwidth Device to Host (GB/s): [ 0.0482852, 0.0748373, 0.109228, 0.154061, 0.297981, 0.378292, 0.44363, 0.510572, 0.573895, 0.628203, 0.692588, 0.76015, 0.833169, 0.855445, 0.928446, 0.973185, 0.72152, 0.835562, 0.815509, 0.893445, 0.959647, 1.03586, 1.12712, 0.971154, 1.21389, 1.33172, 1.41163, 1.47843, 1.53381, 1.46555, 1.56817, 1.67945, 1.77379, 1.82214, 1.8853, 2.01463, 2.32584, 2.63982, 2.83215, 3.03412, 3.96515, 5.06514, 5.08287, 5.84163, 5.85271, 6.05502, 6.31718, 6.45799, 6.18314, 9.42021, 10.0007, 11.3298, 11.8433, 12.4202, 12.5271, 12.7408, 13.1046, 13.4424, 13.4056, 13.7649, 14.196, 14.0118, 14.9963, 14.8493, 14.8224, 16.2279, 16.5326, 17.4102, 17.3779, 18.116, 18.4868, 18.3563, 18.4626, 18.453, 18.4785, 18.3823, 18.4736, 18.5803, 18.5124, 18.4846, 18.6323 ]
+
+Measuring Device to Device Bandwith: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Bandwidth Device to Device (GB/s): [ 0.195459, 0.999683, 1.4601, 2.13177, 1.90486, 1.68854, 2.04778, 2.51247, 2.9084, 3.43162, 3.9792, 5.35399, 3.7184, 2.45278, 1.97322, 2.92199, 2.59371, 5.45769, 5.84607, 7.17952, 11.1674, 12.202, 12.9031, 13.0748, 13.9336, 15.1882, 15.9839, 18.9371, 20.3025, 21.5038, 21.9644, 23.7354, 25.2296, 25.2002, 27.4559, 29.449, 34.316, 39.1019, 43.9098, 47.0178, 66.5088, 38.7791, 29.9975, 23.0074, 22.2648, 20.4024, 17.7758, 17.3034, 19.9744, 16.2956, 18.1876, 18.6429, 19.2942, 19.5462, 20.1444, 19.6777, 20.3313, 20.8249, 20.6625, 20.6799, 20.3884, 20.482, 20.5891, 20.5224, 20.412, 20.3866, 20.6107, 20.5875, 20.5754, 20.5812, 20.4149, 20.4714, 20.4662, 20.4332, 20.4855, 20.2693, 20.2675, 19.9721, 20.1002, 20.2838, 20.2718 ]
+
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU$ HSA_OVERRIDE_GFX_VERSION=9.0.0 hip_bandwidth \
+    --mode shmoo \
+    --memory pinned \
+    --trials 100
+Devices: [ 0 ]
+Measurement Sizes: [ 1024, 2048, 3072, 4096, 5120, 6144, 7168, 8192, 9216, 10240, 11264, 12288, 13312, 14336, 15360, 16384, 17408, 18432, 19456, 20480, 22528, 24576, 26624, 28672, 30720, 32768, 34816, 36864, 38912, 40960, 43008, 45056, 47104, 49152, 51200, 61440, 71680, 81920, 92160, 102400, 204800, 307200, 409600, 512000, 614400, 716800, 819200, 921600, 1024000, 1126400, 2174976, 3223552, 4272128, 5320704, 6369280, 7417856, 8466432, 9515008, 10563584, 11612160, 12660736, 13709312, 14757888, 15806464, 16855040, 18952192, 21049344, 23146496, 25243648, 27340800, 29437952, 31535104, 33632256, 37826560, 42020864, 46215168, 50409472, 54603776, 58798080, 62992384, 67186688 ]
+
+Measuring Host to Device Bandwidth: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Pinned Bandwidth Host to Device (GB/s): [ 0.469811, 1.00184, 1.54245, 1.19457, 1.66576, 2.10867, 1.82184, 2.8995, 2.98078, 3.62849, 4.70942, 3.70239, 3.5502, 2.79114, 5.03039, 5.81508, 1.3843, 1.46915, 1.55049, 1.55377, 1.70901, 1.90167, 2.02023, 2.16953, 2.29475, 2.42313, 2.52772, 2.66802, 2.75369, 2.74858, 2.9323, 3.15947, 3.2284, 3.3502, 3.48045, 3.94471, 4.41894, 4.49959, 5.1337, 5.58496, 7.97546, 9.28419, 8.93104, 9.96981, 9.43243, 9.72476, 9.43657, 10.5996, 11.5206, 11.616, 12.1066, 13.0004, 13.1585, 13.1301, 12.6523, 12.8802, 13.2705, 12.9367, 13.4688, 13.4406, 13.5173, 13.1633, 13.3726, 13.0424, 13.323, 13.3526, 13.4142, 13.4379, 13.3574, 13.1671, 13.1554, 13.2023, 13.1453, 13.3101, 13.2441, 13.156, 13.2066, 13.1591, 13.2003, 13.193, 13.045 ]
+
+Measuring Device to Host Bandwidth: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Pinned Bandwidth Device to Host (GB/s): [ 0.172642, 0.748169, 1.28622, 1.82326, 2.34131, 2.54427, 1.98252, 3.85471, 3.02967, 3.46183, 4.03778, 4.38173, 4.4541, 4.89534, 5.24465, 3.78047, 1.38208, 1.47014, 1.52246, 1.49388, 1.75256, 1.77831, 1.99401, 2.12033, 2.26398, 2.36991, 2.50997, 2.61918, 2.74216, 2.86133, 2.71923, 3.07103, 3.09638, 3.28263, 3.38276, 3.84491, 4.27823, 4.70729, 4.65956, 5.38039, 6.7868, 8.21925, 7.4399, 9.55553, 10.3977, 10.2914, 10.5037, 10.6608, 10.4743, 11.0807, 11.9724, 12.3614, 12.4671, 12.678, 12.7462, 12.8207, 12.8014, 12.905, 12.897, 12.9951, 12.9905, 12.966, 13.0481, 13.0321, 13.0163, 13.0307, 13.0793, 13.0819, 13.094, 13.0546, 13.1133, 13.1463, 13.1411, 13.1752, 13.1632, 13.1452, 13.1388, 13.1159, 13.1958, 13.1773, 13.1939 ]
+
+Measuring Device to Device Bandwith: [1024] [2048] [3072] [4096] [5120] [6144] [7168] [8192] [9216] [10240] [11264] [12288] [13312] [14336] [15360] [16384] [17408] [18432] [19456] [20480] [22528] [24576] [26624] [28672] [30720] [32768] [34816] [36864] [38912] [40960] [43008] [45056] [47104] [49152] [51200] [61440] [71680] [81920] [92160] [102400] [204800] [307200] [409600] [512000] [614400] [716800] [819200] [921600] [1024000] [1126400] [2174976] [3223552] [4272128] [5320704] [6369280] [7417856] [8466432] [9515008] [10563584] [11612160] [12660736] [13709312] [14757888] [15806464] [16855040] [18952192] [21049344] [23146496] [25243648] [27340800] [29437952] [31535104] [33632256] [37826560] [42020864] [46215168] [50409472] [54603776] [58798080] [62992384] [67186688] 
+
+Device ID [0] Device Name [AMD Radeon Graphics]: Bandwidth Device to Device (GB/s): [ 0.174529, 0.598526, 1.1297, 1.42157, 1.87612, 2.22142, 2.4279, 2.937, 3.16443, 3.69594, 4.09128, 4.35357, 4.81255, 5.03627, 5.51342, 3.33875, 5.73573, 6.16595, 6.35514, 6.98497, 7.94546, 8.75719, 9.33239, 9.91072, 9.46366, 11.7959, 8.63691, 13.513, 13.2846, 14.8812, 15.505, 16.2434, 17.0149, 17.119, 18.6578, 20.7634, 25.8501, 29.6489, 33.3902, 36.3043, 71.9543, 49.6981, 31.6283, 23.7081, 21.1359, 19.5219, 17.1333, 18.0808, 19.2877, 17.5086, 18.2146, 18.4724, 18.3441, 18.959, 19.8217, 20.3845, 20.23, 20.5514, 20.4078, 20.3431, 20.2592, 20.5314, 20.3844, 20.5641, 20.6432, 20.6444, 19.8351, 20.658, 20.698, 20.1785, 20.5632, 20.1829, 20.3437, 19.9665, 20.4194, 20.395, 20.283, 18.3595, 19.8455, 19.9697, 20.2021 ]
+
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU$ 
+
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU/rocBLAS/build/release/clients/staging$ cd ~/Soham/Large_code/sources/GPU/rocBLAS/build/release/clients/staging
+
+./rocblas-bench --help
+rocBLAS info: client (OPENMP) reduced omp_set_num_threads to 10
+
+./rocblas-bench [ --data <path> | --yaml <path> ] <options> ...
+
+--sizem |-m <value>        Specific matrix size: sizem is only applicable to BLAS-2 & BLAS-3: the number of rows or columns in matrix.  (Default value is: 128)
+
+--sizen |-n <value>        Specific matrix/vector size: BLAS-1: the length of the vector. BLAS-2 & BLAS-3: the number of rows or columns in matrix  (Default value is: 128)
+
+--sizek |-k <value>        Specific matrix size: BLAS-2: the number of sub or super-diagonals of A. BLAS-3: the number of columns in A and rows in B.  (Default value is: 128)
+
+--kl <value>               Specific matrix size: kl is only applicable to BLAS-2: The number of sub-diagonals of the banded matrix A.  (Default value is: 32)
+
+--ku <value>               Specific matrix size: ku is only applicable to BLAS-2: The number of super-diagonals of the banded matrix A.  (Default value is: 32)
+
+--lda <value>              Leading dimension of matrix A, is only applicable to BLAS-2 & BLAS-3.  (Default value is: 128)
+
+--ldb <value>              Leading dimension of matrix B, is only applicable to BLAS-2 & BLAS-3.  (Default value is: 128)
+
+--ldc <value>              Leading dimension of matrix C, is only applicable to BLAS-2 & BLAS-3.  (Default value is: 128)
+
+--ldd <value>              Leading dimension of matrix D, is only applicable to BLAS-EX   (Default value is: 128)
+
+--any_stride <value>       Do not modify input strides based on leading dimensions 
+
+--stride_a <value>         Specific stride of strided_batched matrix A, is only applicable to strided batchedBLAS-2 and BLAS-3: second dimension * leading dimension.  (Default value is: 16384)
+
+--stride_b <value>         Specific stride of strided_batched matrix B, is only applicable to strided batchedBLAS-2 and BLAS-3: second dimension * leading dimension.  (Default value is: 16384)
+
+--stride_c <value>         Specific stride of strided_batched matrix C, is only applicable to strided batchedBLAS-2 and BLAS-3: second dimension * leading dimension.  (Default value is: 16384)
+
+--stride_d <value>         Specific stride of strided_batched matrix D, is only applicable to strided batchedBLAS_EX: second dimension * leading dimension.  (Default value is: 16384)
+
+--stride_x <value>         Specific stride of strided_batched vector x, is only applicable to strided batchedBLAS_2: second dimension.  (Default value is: 16384)
+
+--stride_y <value>         Specific stride of strided_batched vector y, is only applicable to strided batchedBLAS_2: leading dimension.  (Default value is: 16384)
+
+--incx <value>             increment between values in x vector  (Default value is: 1)
+
+--incy <value>             increment between values in y vector  (Default value is: 1)
+
+--alpha <value>            specifies the scalar alpha  (Default value is: 1)
+
+--alphai <value>           specifies the imaginary part of the scalar alpha  (Default value is: 0)
+
+--beta <value>             specifies the scalar beta  (Default value is: 0)
+
+--betai <value>            specifies the imaginary part of the scalar beta  (Default value is: 0)
+
+--function |-f <value>     BLAS function to test. 
+
+--precision |-r <value>    Precision. Options: h,s,d,c,z,f8_r, bf8_r, f16_r,f32_r,f64_r,bf16_r,f32_c,f64_c,i8_r,i32_r  (Default value is: f32_r)
+
+--a_type <value>           Precision of matrix A. Options: h,s,d,c,z,f16_r,f32_r,f64_r,bf16_r,f32_c,f64_c,i8_r,i32_r 
+
+--b_type <value>           Precision of matrix B. Options: h,s,d,c,z,f16_r,f32_r,f64_r,bf16_r,f32_c,f64_c,i8_r,i32_r 
+
+--c_type <value>           Precision of matrix C. Options: h,s,d,c,z,f16_r,f32_r,f64_r,bf16_r,f32_c,f64_c,i8_r,i32_r 
+
+--d_type <value>           Precision of matrix D. Options: h,s,d,c,z,f16_r,f32_r,f64_r,bf16_r,f32_c,f64_c,i8_r,i32_r 
+
+--compute_type <value>     Precision of computation. Options: h,s,d,c,z,f16_r,f32_r,f64_r,bf16_r,f32_c,f64_c,i8_r,i32_r 
+
+--composite_compute_type <value> Precision of computation. Options: f32, f8_f8_f32, f8_bf8_f32, bf8_f8_f32, bf8_bf8_f32 
+
+--initialization |--init <value> Initialize with random integers, trig functions sin and cos, or hpl-like input. Options: rand_int, trig_float, hpl  (Default value is: hpl)
+
+--transposeA <value>       N = no transpose, T = transpose, C = conjugate transpose  (Default value is: N)
+
+--transposeB <value>       N = no transpose, T = transpose, C = conjugate transpose  (Default value is: N)
+
+--side <value>             L = left, R = right. Only applicable to certain routines  (Default value is: L)
+
+--uplo <value>             U = upper, L = lower. Only applicable to certain routines  (Default value is: U)
+
+--diag <value>             U = unit diagonal, N = non unit diagonal. Only applicable to certain routines  (Default value is: N)
+
+--batch_count <value>      Number of matrices. Only applicable to batched and strided_batched routines  (Default value is: 1)
+
+--HMM <value>              Parameter requesting the use of HipManagedMemory 
+
+--test |-t <value>         Equality/tolerance check on GPU vs. CPU results? 0 = No, 1 = Yes (default: No). Warning: tests may require specific initialization to pass.  (Default value is: )
+
+--verify |-v <value>       Norm check on GPU vs. CPU results? 0 = No, 1 = Yes (default: No)  (Default value is: )
+
+--iters |-i <value>        Iterations to run inside timing loop  (Default value is: 10)
+
+--cold_iters |-j <value>   Cold Iterations to run before entering the timing loop  (Default value is: 2)
+
+--algo <value>             extended precision gemm algorithm  (Default value is: 0)
+
+--solution_index <value>   extended precision gemm solution index  (Default value is: 0)
+
+--flags <value>            gemm_ex flags, see rocblas_gemm_flags enum in documentation  (Default value is: 0)
+
+--geam_ex_op <value>       geam_ex_operation, 0: min_plus operation, 1: plus_min operation  (Default value is: 0)
+
+--atomics_allowed <value>  Atomic operations with non-determinism in results are allowed (default true) 
+
+--atomics_not_allowed <value> Atomic operations with non-determinism in results are not allowed (default false) 
+
+--device <value>           Set default device to be used for subsequent program runs  (Default value is: 0)
+
+--parallel_devices <value> Set number of devices used for parallel runs (device 0 to parallel_devices-1)  (Default value is: 0)
+
+--outofplace               for gemm_ex C and D are stored in separate memory, for trmm B and C are stored in separate memory 
+
+--fortran <value>          Run using Fortran interface 
+
+--api <value>              Use API, supercedes fortran flag (0==C, 1==C_64, ...)  (Default value is: 0)
+
+--workspace <value>        Set fixed workspace memory size instead of using rocblas managed memory  (Default value is: 0)
+
+--log_function_name <value> Function name precedes other items. 
+
+--log_datatype <value>     Include datatypes used in output. 
+
+--use_hipblaslt <value>    Whether to use hipblaslt (default: -1, always: 1, never: 0)  (Default value is: -1)
+
+--function_filter <value>  Simple strstr filter on function name only without wildcards 
+
+--math_mode <value>        extended precision gemm math mode  (Default value is: 0)
+
+--flush_batch_count <value> number of copies of arrays to allocate for cache flushing in timing code. Functions are called iters times in a timing loop. If the problem memory footprint is small enough, then arrays will be cached. flush_batch_count can be used to prevent caching. For example, for sgemm with transA=transB=N: problem_memory_footprint = (m*k + k*n + m*n) * sizeof(float). To flush arrays before reuse set: flush_batch_count >= 1 + cache_size / problem_memory_footprint Note that in the calculation of flush_batch_count any padding from leading dimensions is not loaded to cache and not included in the problem_memory_footprint. If you specify flush_batch_count you cannot also specify flush_memory_size  (Default value is: 1)
+
+--flush_memory_size <value> bytes of memory that will be occupied by arrays. Used only in timing code for cache flushing. Set to greater than cache size so arrays are flushed from cache before they are reused. When the size of arrays (the problem_memory_footprint) is smaller than flush_memory_size, then flush_batch_count copies of arrays are allocated where: flush_batch_count = flush_memory_size / problem_memory_footprint. For sgemm with transA=transB=N problem_memory_footprint = (m*k + k*n + m*n) * sizeof(float). Note that any padding from leading dimensions is not loaded to cache and not included in the problem_memory_footprint. If you specify flush_memory_size you cannot also specify flush_batch_count  (Default value is: 0)
+
+--name_filter <value>      Simple strstr filter on test name only without wildcards, only used with --yaml or --data 
+
+--version <value>          Prints the version number 
+
+--rocblas_tensile_commit_hash <value> Prints the rocBLAS and Tensile commit-hashes 
+
+-z <value>                 Eazy way to set log_function_name and log_datatype (eye dialect form of easy) 
+
+--help |-h                 produces this help message 
+
+
+Examples : ./rocblas-bench -f gemm -r s -m 4000 -n 4000 -k 4000 --lda 4000 --ldb 4000 --ldc 4000 --transposeA N --transposeB T
+
+	   ./rocblas-bench -f gemv -r s -m 10240 -n 10240 --lda 10240
+
+	   ./rocblas-bench -f axpy -r d -n 102400000
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU/rocBLAS/build/release/clients/staging$ ./rocblas-bench \
+    -f gemm \
+    -r s \
+    -m 1024 \
+    -n 1024 \
+    -k 1024
+rocBLAS info: client (OPENMP) reduced omp_set_num_threads to 10
+
+rocBLAS-commit-hash: 
+
+Tensile-commit-hash: 
+
+Warning: Using reference library '/home/netherquark/Soham/Large_code/sources/GPU/rocBLAS/build/deps/blis/lib/libblis.a' which may not support 64-bit input arguments. If running a test suite, please use --gtest_filter=-*stress* to avoid 64-bit test failures.
+Query device success: there are 1 devices
+-------------------------------------------------------------------------------
+Device ID 0 : AMD Radeon Graphics gfx90c:xnack+
+with 14.6 GB memory, max. SCLK 1800 MHz, max. MCLK 1333 MHz, memoryBusWidth 16 Bytes, compute capability 9.0
+maxGridDimX 2147483647, sharedMemPerBlock 65.5 KB, maxThreadsPerBlock 1024, warpSize 64
+-------------------------------------------------------------------------------
+
+
+rocBLAS error: Cannot read /lib64/rocblas/library/TensileLibrary.dat: No such file or directory for GPU arch : gfx90c
+ List of available TensileLibrary Files : 
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1153.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1031.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1150.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1103.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1201.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1151.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1035.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx900.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1010.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1102.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx950.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx908.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1030.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx942.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1100.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1101.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1012.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx906.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1152.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1200.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx90a.dat"
+Aborted                    (core dumped) ./rocblas-bench -f gemm -r s -m 1024 -n 1024 -k 1024
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU/rocBLAS/build/release/clients/staging$ HSA_OVERRIDE_GFX_VERSION=9.0.0 \
+./rocblas-bench \
+    -f gemm \
+    -r s \
+    -m 1024 \
+    -n 1024 \
+    -k 1024
+rocBLAS info: client (OPENMP) reduced omp_set_num_threads to 10
+
+rocBLAS-commit-hash: 
+
+Tensile-commit-hash: 
+
+Warning: Using reference library '/home/netherquark/Soham/Large_code/sources/GPU/rocBLAS/build/deps/blis/lib/libblis.a' which may not support 64-bit input arguments. If running a test suite, please use --gtest_filter=-*stress* to avoid 64-bit test failures.
+Query device success: there are 1 devices
+-------------------------------------------------------------------------------
+Device ID 0 : AMD Radeon Graphics gfx900:xnack+
+with 14.6 GB memory, max. SCLK 1800 MHz, max. MCLK 1333 MHz, memoryBusWidth 16 Bytes, compute capability 9.0
+maxGridDimX 2147483647, sharedMemPerBlock 65.5 KB, maxThreadsPerBlock 1024, warpSize 64
+-------------------------------------------------------------------------------
+
+
+rocBLAS info: Time taken to complete rocBLAS library initialization is 497 milliseconds.
+
+rocBLAS info: maximum library size per device is 0.212517 GB.
+rocblas-bench INFO: lda < min_lda, set lda = 1024
+rocblas-bench INFO: ldb < min_ldb, set ldb = 1024
+rocblas-bench INFO: ldc < min_ldc, set ldc = 1024
+transA,transB,M,N,K,alpha,lda,beta,ldb,ldc,cold_iters,hot_iters,rocblas-Gflops,us
+N,N,1024,1024,1024,1,1024,0,1024,1024, 2, 10, 137.622, 15604.2
+netherquark@sohams-thinkpad:~/Soham/Large_code/sources/GPU/rocBLAS/build/release/clients/staging$ 
+
