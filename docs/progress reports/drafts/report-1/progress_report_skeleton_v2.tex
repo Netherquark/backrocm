@@ -1,0 +1,389 @@
+
+% Compile with XeLaTeX.
+\documentclass[aspectratio=43,11pt]{beamer}
+
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{colortbl}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{xcolor}
+
+\usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds}
+
+% Fonts
+\setmainfont{Liberation Sans}
+\setsansfont{Liberation Sans}
+\setmonofont{DejaVu Sans Mono}
+
+% Theme
+\usefonttheme{professionalfonts}
+\usetheme[numbering=fraction,progressbar=frametitle]{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{footline}{}
+
+% Colors
+\definecolor{Navy}{HTML}{0B1F3A}
+\definecolor{Teal}{HTML}{0F766E}
+\definecolor{Slate}{HTML}{475569}
+\definecolor{SoftBg}{HTML}{F8FAFC}
+\definecolor{Accent}{HTML}{2563EB}
+\definecolor{WarmGray}{HTML}{64748B}
+
+\setbeamercolor{normal text}{fg=Slate,bg=white}
+\setbeamercolor{alerted text}{fg=Teal}
+\setbeamercolor{frametitle}{fg=Navy,bg=white}
+\setbeamercolor{progress bar}{fg=Teal,bg=SoftBg}
+\setbeamercolor{block title}{fg=white,bg=Navy}
+\setbeamercolor{block body}{fg=Slate,bg=SoftBg}
+\setbeamercolor{block title alerted}{fg=white,bg=Teal}
+\setbeamercolor{block body alerted}{fg=Slate,bg=SoftBg}
+\setbeamercolor{block title example}{fg=white,bg=Accent}
+\setbeamercolor{block body example}{fg=Slate,bg=SoftBg}
+\setbeamercolor{title}{fg=Navy}
+\setbeamercolor{subtitle}{fg=Slate}
+\setbeamercolor{section in toc}{fg=Navy}
+\setbeamercolor{structure}{fg=Teal}
+
+% Spacing
+\setlist[itemize]{leftmargin=1.15em,itemsep=0.28em,topsep=0.15em}
+\setlength{\parskip}{0.25em}
+\setlength{\parindent}{0pt}
+\RaggedRight
+\sloppy
+
+\newcommand{\kw}[1]{\textbf{#1}}
+
+\newcommand{\figph}[3]{%
+\begin{center}
+\setlength{\fboxsep}{8pt}%
+\fcolorbox{WarmGray}{SoftBg}{%
+\begin{minipage}[c][#1][c]{\dimexpr #2-2\fboxsep-2\fboxrule\relax}
+\centering
+{\bfseries #3\par}
+\vspace{0.35em}
+{\footnotesize Insert figure, screenshot, chart, or diagram here.\par}
+{\footnotesize Why it helps: anchors the slide in evidence and keeps the text sparse.\par}
+\end{minipage}}%
+\end{center}
+}
+
+\title{Progress Report}
+\subtitle{26 Jun 2026 - 31 Jul 2026}
+\author{Soham Kulkarni}
+\date{}
+
+\begin{document}
+
+% Cover page as requested.
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.center) {\includegraphics[height=0.98\paperheight]{cover.png}};
+\end{tikzpicture}
+\end{frame}
+
+
+\begin{frame}[shrink=10]{Scope evolution and reporting window}
+\begin{columns}[T,onlytextwidth]
+    \column{0.54\textwidth}
+    \begin{itemize}
+        \item Started as a pitch; became a measured recovery study for gfx90c on Fedora 43.
+        \item The evidence chain now runs through spoofing, benchmarks, and source builds.
+        \item The same workflow is being extended to gfx902 and later upstream work.
+    \end{itemize}
+
+    \vspace{0.25em}
+    \begin{itemize}
+        \item Progress reports: 01-07-26 to 15-07-26, then 15-07-26 to 31-07-26.
+        \item Source sequence: blogs \#1 to \#8, with \#1 and \#2 preceding the July window.
+    \end{itemize}
+
+    \column{0.46\textwidth}
+    \figph{3.2cm}{\linewidth}{Timeline placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Introduction}
+\begin{columns}[T,onlytextwidth]
+    \column{0.56\textwidth}
+    \begin{itemize}
+        \item Project title: \kw{Generalisable Pipeline for Backporting ROCm to Obsolete AMD Hardware}.
+        \item Working context: FOSS United Foundation, Season of Commits.
+        \item Core case study: gfx90c on a Ryzen 5650U APU, with gfx902 as the next validation target.
+        \item Main shift: from hardware speculation to evidence-backed software recovery.
+    \end{itemize}
+    \column{0.44\textwidth}
+    \figph{4.0cm}{\linewidth}{Native setup screenshot}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Problem statement}
+\begin{columns}[T,onlytextwidth]
+    \column{0.57\textwidth}
+    \begin{itemize}
+        \item Fedora can install ROCm natively, but higher-level packages still fail on gfx90c.
+        \item PyTorch and rocm-examples miss required gfx90c artifacts.
+        \item GPU spoofing helps validation, but it does not match the real silicon path.
+        \item The software stack is fragmented across system ROCm, packaged ROCm, and source builds.
+    \end{itemize}
+    \column{0.43\textwidth}
+    \figph{4.0cm}{\linewidth}{Failure surface placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Objectives of the project}
+\begin{columns}[T,onlytextwidth]
+    \column{0.56\textwidth}
+    \begin{itemize}
+        \item Restore gfx90c support in a repeatable way.
+        \item Measure each recovery stage against a native baseline.
+        \item Port the same workflow to gfx902.
+        \item Keep the path general enough for future dropped AMD targets.
+    \end{itemize}
+    \column{0.44\textwidth}
+    \figph{4.0cm}{\linewidth}{Objective flowchart placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Project plan with timeline}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item 6 months: complete gfx90c port recovery.
+        \item 9 months: finish an end-to-end CI/CD pipeline.
+        \item Next project: contribute directly to Mojo, LLVM, ROCm, PyTorch, and vLLM.
+        \item Trigger: a SOTA RDNA 4 GPU from FOSS United Foundation.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Gantt timeline placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Literature review - phase 1}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item Blog \#1 sets the motivation and the gfx90c / Vega 7 target.
+        \item Blog \#2 shows native ROCm 6.4.4 on Fedora 43 and the first PyTorch failure.
+        \item The first progress report compresses these findings into a working baseline.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Post sequence placeholder}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Literature review - phase 2}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item Blog \#3 tests GPU spoofing via an HSA override.
+        \item Blog \#4 adds AMD first-party benchmarks and FHS packaging context.
+        \item The first progress report turns this into benchmark-backed evidence.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Benchmark comparison placeholder}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Literature review - phase 3}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item Blog \#5 builds GPU programming and execution-model context.
+        \item Blog \#6 studies rocm-examples failures on gfx90c.
+        \item Blogs \#7 and \#8 move into source builds and the Vega execution / memory model.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Assembly and ISA placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Gap in the research, technology, and methodology}
+\begin{columns}[T,onlytextwidth]
+    \column{0.57\textwidth}
+    \begin{itemize}
+        \item There was no single reproducible recovery workflow.
+        \item Packaged binaries omitted target-specific gfx90c data.
+        \item Existing fixes were scattered across posts, issues, and commands.
+        \item The missing layer was not just support, but a measurable method.
+    \end{itemize}
+    \column{0.43\textwidth}
+    \figph{4.0cm}{\linewidth}{Sankey or gap map placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Description of the proposed solution}
+\begin{columns}[T,onlytextwidth]
+    \column{0.56\textwidth}
+    \begin{itemize}
+        \item Use a staged recovery pipeline instead of a single workaround.
+        \item Move from native validation to spoofing, mixed stacks, containers, and source builds.
+        \item Treat each step as a separate diagnostic layer.
+        \item Reuse the same workflow for gfx902 and later targets.
+    \end{itemize}
+    \column{0.44\textwidth}
+    \figph{4.0cm}{\linewidth}{Pipeline diagram placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Requirement analysis}
+\begin{columns}[T,onlytextwidth]
+    \column{0.54\textwidth}
+    \begin{itemize}
+        \item Fedora 43 host with ROCm 6.4.4.
+        \item HIP, rocBLAS, PyTorch, and rocm-examples coverage.
+        \item A benchmark set that includes bandwidth, GEMM, and runtime checks.
+        \item A second device family for cross-validation.
+    \end{itemize}
+    \column{0.46\textwidth}
+    \figph{4.0cm}{\linewidth}{Requirements matrix placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Technology stack}
+\begin{columns}[T,onlytextwidth]
+    \column{0.54\textwidth}
+    \begin{itemize}
+        \item Fedora 43, ROCm 6.4.4, HIP, HIPCC.
+        \item LLVM, clang, rocm-examples, rocBLAS, PyTorch.
+        \item CLBlast, clpeak, Geekbench, and AMD benchmark clients.
+        \item Bash, CMake, Git, and source-level patching.
+    \end{itemize}
+    \column{0.46\textwidth}
+    \figph{4.0cm}{\linewidth}{Layered stack diagram placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Design}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item Design follows a bottom-up recovery model.
+        \item Each layer isolates packaging, build, runtime, or hardware limits.
+        \item The same design should explain success on gfx90c and failure on missing paths.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Architecture block diagram placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Development and implementation - baseline}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item Verified native ROCm on Fedora 43.
+        \item Confirmed HIP execution on gfx90c.
+        \item Traced the first PyTorch failure to missing rocBLAS kernels.
+        \item Established spoofing as a useful but imperfect baseline.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Command output placeholder}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Development and implementation - source build path}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item Built rocm-examples from source against ROCm 6.4.4.
+        \item Reached the missing \texttt{main\_gfx90c.s} barrier.
+        \item Ported \texttt{assembly\_to\_executable} and related build pieces.
+        \item Studied how .hip, LLVM IR, and AMDGPU code fit together.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Source build / assembly screenshot placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Testing and debugging - failure analysis}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item Classified failures into packaging, metadata, missing Tensile data, and hardware-limited cases.
+        \item Compared native, spoofed, and source-built behaviour.
+        \item Kept benchmark runs attached to each recovery step.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Error taxonomy / Sankey placeholder}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Testing and debugging - benchmark comparison}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item Benchmarks covered bandwidth, GEMM, clpeak, Geekbench, and rocBLAS.
+        \item Spoofing stayed close on some metrics and diverged on others.
+        \item The source-build path clarified which failures were structural.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Native vs spoofed graph placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Project outcome}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item gfx90c is now a studied, testable target rather than an unknown.
+        \item The runtime path works for basic HIP code.
+        \item The remaining blockers sit in packaging, kernels, and generated artifacts.
+        \item gfx902 is ready for the same validation sequence.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Outcome dashboard placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Conclusion}
+\begin{columns}[T,onlytextwidth]
+    \column{0.55\textwidth}
+    \begin{itemize}
+        \item The project moved from a broad idea to a reproducible recovery method.
+        \item The strongest evidence points to software and packaging gaps.
+        \item The next stage is to finish the gfx90c port and then harden the pipeline.
+        \item The later roadmap expands into direct upstream work after new hardware arrives.
+    \end{itemize}
+    \column{0.45\textwidth}
+    \figph{4.0cm}{\linewidth}{Roadmap end-state placeholder}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{References}
+\small
+\begin{itemize}
+    \item AMD vis-\`a-vis GPUs \#1 - \#8.
+    \item Progress Report No \#1 and Progress Report No \#2.
+    \item AMD ROCm documentation, LLVM source history, and the Vega ISA reference guide.
+    \item Fedora packaging notes and issue threads related to gfx90c support.
+\end{itemize}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,559 @@
+
+% Compile with XeLaTeX.
+\documentclass[aspectratio=43,9pt]{beamer}
+
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{colortbl}
+\usepackage{ragged2e}
+%\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{xcolor}
+
+\usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds}
+
+\usepackage{hyperref}
+
+\hypersetup{
+    breaklinks=true
+}
+
+\Urlmuskip=0mu plus 1mu
+
+% Fonts
+\setmainfont{Liberation Sans}
+\setsansfont{Liberation Sans}
+\setmonofont{DejaVu Sans Mono}
+
+% Theme
+\usefonttheme{professionalfonts}
+\usetheme[numbering=fraction,progressbar=frametitle]{metropolis}
+\metroset{block=fill}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamertemplate{itemize items}[bullet]
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{footline}{}
+
+% Colors
+\definecolor{Navy}{HTML}{0B1F3A}
+\definecolor{Teal}{HTML}{0F766E}
+\definecolor{Slate}{HTML}{475569}
+\definecolor{SoftBg}{HTML}{F8FAFC}
+\definecolor{Accent}{HTML}{2563EB}
+\definecolor{WarmGray}{HTML}{64748B}
+\definecolor{SymbiosisRed}{HTML}{C41230}
+
+\setbeamercolor{normal text}{fg=Slate,bg=white}
+\setbeamercolor{alerted text}{fg=Teal}
+\setbeamercolor{frametitle}{fg=Navy,bg=white}
+\setbeamercolor{progress bar}{fg=Teal,bg=SoftBg}
+\setbeamercolor{block title}{fg=white,bg=Navy}
+\setbeamercolor{block body}{fg=Slate,bg=SoftBg}
+\setbeamercolor{block title alerted}{fg=white,bg=Teal}
+\setbeamercolor{block body alerted}{fg=Slate,bg=SoftBg}
+\setbeamercolor{block title example}{fg=white,bg=Accent}
+\setbeamercolor{block body example}{fg=Slate,bg=SoftBg}
+\setbeamercolor{title}{fg=Navy}
+\setbeamercolor{subtitle}{fg=Slate}
+\setbeamercolor{section in toc}{fg=Navy}
+\setbeamercolor{structure}{fg=Teal}
+
+% Spacing
+%\setlist[itemize]{leftmargin=1.15em,itemsep=0.28em,topsep=0.15em}
+%\setlength{\parskip}{0.25em}
+%\setlength{\parindent}{0pt}
+%\RaggedRight
+%\sloppy
+%\setlength{\leftmargini}{1.15em}
+
+%\addtobeamertemplate{itemize/enumerate body begin}{%
+%  \setlength{\itemsep}{0.3em}%
+%  \setlength{\parskip}{0pt}%
+%  \setlength{\parsep}{0pt}%
+%  \RaggedRight%
+%  \sloppy%
+%}{}
+%
+%\setbeamertemplate{itemize items}[bullet]
+%\setlength{\leftmargini}{1.15em}
+
+\setbeamertemplate{itemize item}{\textbullet}
+\setbeamertemplate{itemize subitem}{\textbullet}
+\setbeamertemplate{itemize subsubitem}{\textbullet}
+
+\newcommand{\kw}[1]{\textbf{#1}}
+
+\newcommand{\figph}[3]{%
+\begin{center}
+\setlength{\fboxsep}{8pt}%
+\fcolorbox{WarmGray}{SoftBg}{%
+\begin{minipage}[c][#1][c]{\dimexpr #2-2\fboxsep-2\fboxrule\relax}
+\centering
+{\bfseries #3\par}
+\vspace{0.35em}
+{\footnotesize Insert figure, screenshot, chart, or diagram here.\par}
+{\footnotesize Why it helps: anchors the slide in evidence and keeps the text sparse.\par}
+\end{minipage}}%
+\end{center}
+}
+
+\title{Progress Report}
+\subtitle{26 Jun 2026 - 31 Jul 2026}
+\author{Soham Kulkarni}
+\date{31 July 2026}
+
+\begin{document}
+
+\begin{frame}[plain]
+    \rmfamily % Switches to Times/Serif font for exact visual matching
+    \centering
+    \color{black}
+
+    {\Large\bfseries B. Tech. Project AY 2026-27}\\[0.2cm]
+    {\Large CA 1 Presentation}\\[0.1cm]
+
+    {\large \textbf{Project ID:} INT2 \\ \textbf{Project}: Porting ROCm to Consumer AMD GPUs}
+    
+%    \vspace{0.2cm}
+
+    % Logo Placeholder
+    \begin{center}
+        \includegraphics[height=2.5cm]{SIT_Logo.png} % Replace 'example-image-a' with your logo file (e.g., logo.png)
+    \end{center}
+
+
+    {\large \textbf{Guides:} Dr. Shruti Sunnad \& Dr. Madhvi Saxena}\\[0.2cm]
+    {\large \textbf{Industry Mentors}: \\ Rahul Poruri (CEO, FOSS United) \\\& \\Bhooshan Agalgatti (Sr. Director, Nvidia)}\\[0.2cm]
+    {\large \textbf{Member}: Soham Kulkarni (23070126129)}
+
+%\vspace{0.2cm}
+\begin{color}{gray}
+    \centering {\small Department of Artificial Intelligence \& Machine Learning}
+\end{color}
+\end{frame}
+
+\begin{frame}{Project evolution and reporting window}
+\begin{itemize}
+        \item Current work targets \texttt{gfx90c}, with workflow validation planned on \texttt{gfx902}.
+        \item Reporting period: \texttt{26-06-26} to \texttt{31-07-26} across two progress reports.
+        \item Technical evidence is documented through eight project blog articles published on \href{https://netherquark.substack.com}{Substack}.
+    \end{itemize}
+    \begin{figure}[htbp]
+        \includegraphics[width=\linewidth]{articles_matrix.png}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Introduction}
+\begin{itemize}
+        \item Conducted as an employee of \textit{FOSS United Foundation}.
+        \item ROCm is AMD's CUDA
+        \item Primary target: \texttt{gfx90c} (Ryzen 5 5650U); validation target: \texttt{gfx902} (Ryzen 5 2200G).
+        \item Goal: develop a reproducible workflow for adding ROCm support.
+\end{itemize}
+
+\vspace{0.5cm}
+\begin{center}
+\begin{figure}[htbp]
+    \includegraphics[width=0.75\linewidth]{AMD_Logo.png}
+\end{figure}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}{Problem statement}
+\begin{itemize}
+        \item Native HIP execution succeeds, but packaged ROCm libraries lack complete gfx90c support.
+        \item Missing rocBLAS/Tensile artifacts prevent higher-level workloads such as PyTorch.
+        \item Community spoofing enables evaluation but is not a production-grade solution.
+        \item A reproducible recovery workflow for unsupported architectures is currently unavailable.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Objectives of the project}
+\begin{itemize}
+        \item Recover functional ROCm support for gfx90c using reproducible methods.
+        \item Benchmark every recovery stage against the native software stack \& against spoofing.
+        \item Validate the methodology on gfx902.
+        \item Generalise the workflow for other unsupported AMD architectures.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Project Timeline}
+\vspace{-0.5cm}
+\begin{itemize}
+        \item Jun 2026: Verify feasibility of project
+        \item Jul 2026: Port 1 HIP application from \texttt{gfx900} to \texttt{gfx90c}
+        \item Aug 2026: Develop expertise in GCN Assembly, HIP, ROCm build system
+        \item Sep 2026: Finish porting \texttt{rocm-examples}
+        \item Oct 2026: Finish porting full ROCm stack
+        \item Nov 2026: Finish porting PyTorch / Dockerised PyTorch
+        \item Dec 2026: Establish a reproducible recovery workflow for \texttt{gfx90c}.
+        \item Jan 2027: Benchmark port vs spoofing, run profiling \& optimise fixes. Check \& resolve regressions as per ROCm test suite.
+        \item Feb 2027: Validate approach on \texttt{gfx902}
+        \item Mar 2027: Set up CI/CID for all unsupported AMD GCN GPUs.
+        \item Apr-Jul 2027: Contribute upstream to Mojo, LLVM, ROCm, PyTorch, and vLLM with RDNA 4 development platform.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Literature review -- ROCm software stack}
+\begin{itemize}
+    \item ROCm Documentation (\href{https://rocm.docs.amd.com/}{\texttt{rocm.docs.amd.com/...}})
+    \item HIP Programming Model (\href{https://rocm.docs.amd.com/projects/HIP/en/latest/understand/programming_model.html}{\texttt{rocm.docs.amd.com/.../programming\_model}})
+    \item HIP Programming Patterns (\href{https://rocm.docs.amd.com/projects/HIP/en/latest/tutorial/programming-patterns.html}{\texttt{rocm.docs.amd.com/.../programming-patterns}})
+    \item HIP SAXPY Tutorial (\href{https://rocm.docs.amd.com/projects/HIP/en/latest/tutorial/saxpy.html}{\texttt{rocm.docs.amd.com/.../saxpy}})
+    \item HIPIFY (\href{https://github.com/ROCm/HIPIFY}{\texttt{github.com/ROCm/HIPIFY}})
+    \item ROCm Examples (\href{https://github.com/ROCm/rocm-examples}{\texttt{github.com/ROCm/rocm-examples}})
+    \item ROCm Libraries (\href{https://github.com/ROCm/rocm-libraries}{\texttt{github.com/ROCm/rocm-libraries}})
+    \item rocBLAS (\href{https://github.com/ROCm/rocBLAS}{\texttt{github.com/ROCm/rocBLAS}})
+    \item hipBLAS (\href{https://github.com/ROCm/hipBLAS}{\texttt{github.com/ROCm/hipBLAS}})
+    \item ROCm Platform (\href{https://github.com/ROCm/ROCm}{\texttt{github.com/ROCm/ROCm}})
+    \item ROCm LLVM Fork (\href{https://github.com/ROCm/llvm-project}{\texttt{github.com/ROCm/llvm-project}})
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Literature review -- Compiler, build system and upstream development}
+\begin{itemize}
+    \item ROCm Libraries PR \#8139 (\href{https://github.com/ROCm/rocm-libraries/pull/8139}{\texttt{github.com/ROCm/.../pull/8139}})
+    \item TheRock Issue \#3818 (\href{https://github.com/ROCm/TheRock/issues/3818}{\texttt{github.com/ROCm/.../issues/3818}})
+    \item TheRock Build System (\href{https://github.com/ROCm/TheRock}{\texttt{github.com/ROCm/TheRock}})
+    \item ROCm GitHub Organisation (\href{https://github.com/ROCm}{\texttt{github.com/ROCm}})
+    \item RadeonOpenCompute (\href{https://github.com/RadeonOpenCompute}{\texttt{github.com/RadeonOpenCompute}})
+    \item LLVM AMDGPU Backend (\href{https://github.com/llvm/llvm-project/tree/main/llvm/lib/Target/AMDGPU}{\texttt{github.com/llvm/.../AMDGPU}})
+    \item LLVM Clang (\href{https://github.com/llvm/llvm-project/tree/main/clang}{\texttt{github.com/llvm/.../clang}})
+    \item ROCm LLVM Toolchain (\href{https://github.com/ROCm/llvm-project}{\texttt{github.com/ROCm/llvm-project}})
+    \item AMD GCN ISA Reference (\href{https://gpuopen.com/learn/amd-gcn-assembly-cross-lane-operations/}{\texttt{gpuopen.com/.../gcn-assembly}})
+    \item GPUOpen (\href{https://gpuopen.com/}{\texttt{gpuopen.com}})
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Literature review -- GPU architecture and supporting references}
+\begin{itemize}
+    \item Graphics Processing Unit (\href{https://en.wikipedia.org/wiki/Graphics_processing_unit}{\texttt{wikipedia.org/.../Graphics\_processing\_unit}})
+    \item Geometry Engine (\href{https://en.wikipedia.org/wiki/Geometry_Engine}{\texttt{wikipedia.org/.../Geometry\_Engine}})
+    \item Transformation Matrix (\href{https://en.wikipedia.org/wiki/Transformation_matrix}{\texttt{wikipedia.org/.../Transformation\_matrix}})
+    \item GPUOpen Technical Articles (\href{https://gpuopen.com/learn/}{\texttt{gpuopen.com/learn}})
+    \item Project Research Notes (\href{https://docs.google.com/document/d/1dZ3vF8GE8_gx6t152sOaUVEPq0ybmailxvu3uk89_is/edit}{\texttt{docs.google.com/...}})
+    \item Azu (\href{https://github.com/Netherquark/azu}{\texttt{github.com/Netherquark/azu}})
+    \item PuneFOSS CFP (\href{https://fossunited.org/c/pune/punefoss4/cfp/2lhj0bntp3}{\texttt{fossunited.org/.../2lhj0bntp3}})
+    \item ROCm Examples Repository (\href{https://github.com/ROCm/rocm-examples}{\texttt{github.com/ROCm/rocm-examples}})
+    \item RadeonOpenCompute Organisation (\href{https://github.com/RadeonOpenCompute}{\texttt{github.com/RadeonOpenCompute}})
+    \item HIPIFY Repository (\href{https://github.com/ROCm/HIPIFY}{\texttt{github.com/ROCm/HIPIFY}})
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Gap in the research, technology, and methodology}
+\vspace{-0.5cm}
+\begin{itemize}
+        \item No documented end-to-end workflow for recovering unsupported ROCm targets.
+        \item Packaged ROCm components omitted \texttt{gfx90c}-specific code generation and runtime data.
+        \item Recovery knowledge was fragmented across documentation, issue trackers, pull requests, and community discussions.
+        \item No methodology existed to validate recovery, benchmark correctness, and reproduce results across GPU generations.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Gap in the research, technology, and methodology}
+\vspace{-1.5cm}
+\hspace{-3cm}
+\begin{figure}
+\includegraphics[width=1.1\linewidth]{sankey.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Description of the proposed solution}
+\begin{itemize}
+        \item Establish a staged recovery workflow from native binaries to complete source builds.
+        \item Validate every layer using HIP applications, \texttt{rocm-examples}, and PyTorch workloads.
+        \item Isolate compiler, runtime, library, packaging, and hardware-specific failures independently.
+        \item Produce a reproducible workflow transferable to other unsupported AMD GCN GPUs.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Requirement analysis}
+\begin{figure}
+\includegraphics[width=\linewidth]{system-info.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Technology Stack}
+
+\centering
+\setlength{\tabcolsep}{7pt}
+
+%---------------- Row 1 ----------------%
+\begin{tabular}{ccccc}
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=\linewidth]{fedora-logo.png}}} &
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=\linewidth]{rocm-logo.png}}} &
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=\linewidth]{llvm-logo.png}}} &
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=0.9\linewidth]{cpp-logo.png}}} &
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=\linewidth]{git-logo.png}}}
+\end{tabular}
+
+\vspace{0.5cm}
+
+%---------------- Row 2 ----------------%
+\begin{tabular}{ccccc}
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=\linewidth]{bash-logo.png}}} &
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=0.7\linewidth]{pytorch-logo.png}}} &
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=\linewidth]{mojo-logo.png}}} &
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=\linewidth]{python-logo.png}}} &
+{\parbox[c][1.55cm][c]{1.55cm}{\centering \includegraphics[width=\linewidth]{geekbench-logo.png}}}
+\end{tabular}
+\end{frame}
+
+\begin{frame}{Native ROCm baseline}
+\vspace{-0.5cm}
+\begin{itemize}
+    \item Installed ROCm 6.4.4 on Fedora 43 for \texttt{gfx90c}.
+    \item Verified HIP compilation and execution using native ROCm binaries.
+    \item Identified PyTorch failures caused by missing \texttt{gfx90c} rocBLAS Tensile data.
+    \item Evaluated HSA architecture spoofing as an initial compatibility baseline.
+    \item Ran Fedora provided \texttt{rocm-examples} as a baseline.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Source recovery}
+\vspace{-0.5cm}
+\begin{itemize}
+    \item Built \texttt{rocm-examples} from source using the ROCm 6.4.4 toolchain.
+    \item Investigated missing \texttt{main\_gfx90c.s} assembly generation.
+    \item Extended the \texttt{assembly\_to\_executable} workflow for \texttt{gfx90c}.
+    \item Traced compilation from HIP source through LLVM IR to AMDGPU assembly.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Failure analysis}
+\vspace{-0.5cm}
+\begin{itemize}
+    \item Classified failures into packaging, metadata, missing Tensile data, and hardware limitations.
+    \item Compared behaviour across native, spoofed, and source-built environments.
+    \item Validated each recovery stage using HIP applications and \texttt{rocm-examples}.
+    \item Recorded reproducible failure cases for subsequent recovery work.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Benchmark evaluation}
+\vspace{-0.5cm}
+\begin{itemize}
+    \item Evaluated memory bandwidth using CLBlast and clpeak.
+    \item Measured matrix multiplication performance using rocBLAS benchmark clients.
+    \item Compared application behaviour under native and spoofed execution.
+    \item Used benchmark results to validate recovered functionality and identify remaining regressions.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Benchmark evaluation}
+\vspace{-3cm}
+\hspace{-5cm}
+\begin{figure}[htbp]
+    \includegraphics[width=\linewidth]{spoofing_summary.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Benchmark evaluation}
+\begin{figure}[htbp]
+    \includegraphics[width=\linewidth]{spoofing-performance.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Benchmark evaluation}
+\begin{figure}[htbp]
+    \includegraphics[width=\linewidth]{hip-basic-progress.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Benchmark evaluation}
+\begin{figure}[htbp]
+    \includegraphics[width=\linewidth]{overall_progress.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Intended project outcome}
+\vspace{-0.5cm}
+\begin{itemize}
+    \item A reproducible workflow for recovering unsupported AMD GCN GPUs under ROCm.
+    \item Complete \texttt{gfx90c} enablement across the ROCm software stack.
+    \item Validation of the recovery methodology on \texttt{gfx902}.
+    \item Benchmark-backed evaluation of native, spoofed, and recovered software stacks.
+    \item Documentation suitable for upstream contribution and long-term maintenance.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Conclusion}
+\vspace{-0.5cm}
+\begin{itemize}
+    \item Native ROCm functionality on unsupported hardware was successfully characterised.
+    \item Compiler, runtime, packaging, and library limitations were systematically isolated.
+    \item A staged recovery methodology was established for unsupported ROCm targets.
+    \item The proposed workflow provides a foundation for future upstream enablement of legacy AMD GPUs.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{References}
+\scriptsize
+\begin{itemize}
+    \item AMD ROCm Documentation\\
+    \url{https://rocm.docs.amd.com/}
+
+    \item AMD ROCm Programming Guide\\
+    \url{https://rocm.docs.amd.com/projects/HIP/en/latest/}
+
+    \item HIP Programming Model\\
+    \url{https://rocm.docs.amd.com/projects/HIP/en/latest/understand/programming_model.html}
+
+    \item HIP Programming Patterns\\
+    \url{https://rocm.docs.amd.com/projects/HIP/en/latest/tutorial/programming-patterns.html}
+
+    \item HIP SAXPY Tutorial\\
+    \url{https://rocm.docs.amd.com/projects/HIP/en/latest/tutorial/saxpy.html}
+
+    \item ROCm GitHub Organisation\\
+    \url{https://github.com/ROCm}
+
+    \item ROCm Platform Repository\\
+    \url{https://github.com/ROCm/ROCm}
+
+    \item ROCm Libraries Repository\\
+    \url{https://github.com/ROCm/rocm-libraries}
+
+    \item ROCm Libraries Pull Request \#8139\\
+    \url{https://github.com/ROCm/rocm-libraries/pull/8139}
+
+    \item ROCm Examples Repository\\
+    \url{https://github.com/ROCm/rocm-examples}
+
+    
+\end{itemize}
+\end{frame}
+
+\begin{frame}{References}
+    \scriptsize
+    \begin{itemize}
+        \item rocBLAS Repository\\
+    \url{https://github.com/ROCm/rocBLAS}
+
+    \item hipBLAS Repository\\
+    \url{https://github.com/ROCm/hipBLAS}
+
+    \item TheRock Repository\\
+    \url{https://github.com/ROCm/TheRock}
+
+    \item TheRock Issue \#3818\\
+    \url{https://github.com/ROCm/TheRock/issues/3818}
+
+    \item ROCm LLVM Fork\\
+    \url{https://github.com/ROCm/llvm-project}
+
+    \item LLVM Project\\
+    \url{https://github.com/llvm/llvm-project}
+
+    \item LLVM AMDGPU Backend\\
+    \url{https://github.com/llvm/llvm-project/tree/main/llvm/lib/Target/AMDGPU}
+
+    \item GPUOpen\\
+    \url{https://gpuopen.com/}
+
+    \item AMD GCN Assembly Article\\
+    \url{https://gpuopen.com/learn/amd-gcn-assembly-cross-lane-operations/}
+
+    \item RadeonOpenCompute\\
+    \url{https://github.com/RadeonOpenCompute}
+
+    
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{References}
+   \scriptsize
+    \begin{itemize}
+    \item HIPIFY Repository\\
+    \url{https://github.com/ROCm/HIPIFY}
+    \item Graphics Processing Unit\\
+    \url{https://en.wikipedia.org/wiki/Graphics_processing_unit}
+
+    \item Geometry Engine\\
+    \url{https://en.wikipedia.org/wiki/Geometry_Engine}
+
+    \item Transformation Matrix\\
+    \url{https://en.wikipedia.org/wiki/Transformation_matrix}
+        \item Azu\\
+    \url{https://github.com/Netherquark/azu}
+
+    \item PuneFOSS 2025 CFP\\
+    \url{https://fossunited.org/c/pune/punefoss4/cfp/2lhj0bntp3}
+
+    \item AMD vis-\`a-vis GPUs Blog Series (\#1--\#8)
+
+    \item Progress Report No.~1
+
+    \item Progress Report No.~2
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{31 July 2026 CA-1 Presentation}
+    \begin{figure}[htbp]
+        \includegraphics[width=\linewidth]{meeting.png}
+    \end{figure}
+\end{frame}
+
+%\begin{frame}{Project outcome}
+%\begin{columns}[T,onlytextwidth]
+%    \column{0.55\textwidth}
+%    \begin{itemize}
+%        \item gfx90c is now a studied, testable target rather than an unknown.
+%        \item The runtime path works for basic HIP code.
+%        \item The remaining blockers sit in packaging, kernels, and generated artifacts.
+%        \item gfx902 is ready for the same validation sequence.
+%    \end{itemize}
+%    \column{0.45\textwidth}
+%    \figph{4.0cm}{\linewidth}{Outcome dashboard placeholder}
+%\end{columns}
+%\end{frame}
+%
+%
+%\begin{frame}{Conclusion}
+%\begin{columns}[T,onlytextwidth]
+%    \column{0.55\textwidth}
+%    \begin{itemize}
+%        \item The project moved from a broad idea to a reproducible recovery method.
+%        \item The strongest evidence points to software and packaging gaps.
+%        \item The next stage is to finish the gfx90c port and then harden the pipeline.
+%        \item The later roadmap expands into direct upstream work after new hardware arrives.
+%    \end{itemize}
+%    \column{0.45\textwidth}
+%    \figph{4.0cm}{\linewidth}{Roadmap end-state placeholder}
+%\end{columns}
+%\end{frame}
+%
+%
+%\begin{frame}{References}
+%\small
+%\begin{itemize}
+%    \item AMD vis-\`a-vis GPUs \#1 - \#8.
+%    \item Progress Report No \#1 and Progress Report No \#2.
+%    \item AMD ROCm documentation, LLVM source history, and the Vega ISA reference guide.
+%    \item Fedora packaging notes and issue threads related to gfx90c support.
+%\end{itemize}
+%\end{frame}
+
+\end{document}
