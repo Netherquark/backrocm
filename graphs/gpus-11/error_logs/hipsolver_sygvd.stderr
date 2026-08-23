@@ -1,0 +1,26 @@
+rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+
+rocBLAS error: Cannot read /lib64/rocblas/library/TensileLibrary.dat: No such file or directory for GPU arch : gfx90c
+ List of available TensileLibrary Files : 
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1153.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1031.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1150.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1103.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1201.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1151.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1035.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx900.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1010.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1102.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx950.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx908.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1030.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx942.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1100.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1101.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1012.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx906.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1152.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx1200.dat"
+"/lib64/rocblas/library/TensileLibrary_lazy_gfx90a.dat"

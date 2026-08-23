@@ -1,0 +1,36 @@
+2026-08-21T00:19:53+05:30
+Running /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/build/bin/Tutorials/reduction/reduction_benchmark_v10
+Run on (12 X 1111.72 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x6)
+  L1 Instruction 32 KiB (x6)
+  L2 Unified 512 KiB (x6)
+  L3 Unified 16384 KiB (x1)
+Load Average: 1.12, 1.20, 1.18
+hdp_clock_instruction_rate: 1000000
+hdp_clock_rate: 1800000
+hdp_compute_mode: 0
+hdp_concurrent_kernels: 1
+hdp_gcn_arch_name: gfx90c:xnack+
+hdp_integrated: 1
+hdp_l2_cache_size: 1048576
+hdp_major: 9
+hdp_max_grid_size_x: 2147483647
+hdp_max_grid_size_y: 65536
+hdp_max_grid_size_z: 65536
+hdp_max_shared_memory_per_multi_processor: 65536
+hdp_max_threads_dim_x: 1024
+hdp_max_threads_dim_y: 1024
+hdp_max_threads_dim_z: 1024
+hdp_max_threads_per_block: 1024
+hdp_max_threads_per_multiprocessor: 2560
+hdp_memory_bus_width: 128
+hdp_memory_clock_rate: 1333000
+hdp_minor: 0
+hdp_multi_processor_count: 7
+hdp_name: AMD Radeon Graphics
+hdp_regs_per_block: 65536
+hdp_shared_mem_per_block: 65536
+hdp_total_global_mem: 14612635648
+hdp_warp_size: 64
+***WARNING*** Library was built as DEBUG. Timings may be affected.

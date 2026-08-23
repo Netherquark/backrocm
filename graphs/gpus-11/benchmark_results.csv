@@ -1,0 +1,142 @@
+binary|status|execution_time_ms|error_category|raw_error
+rocsolver_syev_strided_batched|Failure|13534|"Process Error: ""Terminated by Signal 127"""|
+rocsolver_syev|Failure|12839|"Process Error: ""Terminated by Signal 127"""|
+rocsolver_getf2|Success|12802|None|
+rocsolver_syev_batched|Failure|12862|"Process Error: ""Terminated by Signal 127"""|
+rocsolver_getri|Failure|13415|"Tensile Error: ""Missing TensileLibrary.dat"""|
+rocsparse_bsrilu0|Failure|11000|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/preconditioner/bsrilu0/main.cpp:158"
+rocsparse_csric0|Failure|10617|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/preconditioner/csric0/main.cpp:141"
+rocsparse_csritilu0|Failure|10612|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/preconditioner/csritilu0/main.cpp:158"
+rocsparse_gpsv|Failure|10566|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_gtsv|Failure|10649|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_bsric0|Failure|10582|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/preconditioner/bsric0/main.cpp:166"
+rocsparse_csrilu0|Failure|10631|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/preconditioner/csrilu0/main.cpp:139"
+rocsparse_csrsv|Failure|10673|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/level_2/csrsv/main.cpp:139"
+rocsparse_gemvi|Success|10646|None|
+rocsparse_csritsv|Failure|10592|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_bsrxmv|Success|10763|None|
+rocsparse_csrmv|Success|10612|None|
+rocsparse_gebsrmv|Failure|10660|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_bsrmv|Success|10689|None|
+rocsparse_spsv|Failure|10641|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/level_2/spsv/main.cpp:147"
+rocsparse_ellmv|Failure|10688|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_coomv|Failure|10674|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_spitsv|Success|10672|None|
+rocsparse_spmv|Success|10723|None|
+rocsparse_bsrsv|Failure|10691|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/level_2/bsrsv/main.cpp:179"
+rocsparse_gthr|Failure|10677|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_axpyi|Failure|10621|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_sctr|Failure|10676|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_roti|Failure|10636|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_doti|Failure|10732|"Process Error: ""Terminated by Signal 127"""|
+rocsparse_sddmm|Success|10669|None|
+rocsparse_bsrsm|Failure|10677|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/level_3/bsrsm/main.cpp:200"
+rocsparse_csrsm|Failure|10687|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/level_3/csrsm/main.cpp:190"
+rocsparse_csrmm|Success|10626|None|
+rocsparse_bsrmm|Success|10643|None|
+rocsparse_spsm|Failure|10623|"rocSPARSE Error: ""Internal Error"""|"rocSPARSE error encountered: ""rocsparse_status_internal_error"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocSPARSE/level_3/spsm/main.cpp:172"
+rocsparse_gemmi|Success|10708|None|
+rocsparse_gebsrmm|Failure|10734|"Process Error: ""Terminated by Signal 127"""|
+hipfft_multi_gpu|Success|56|None|
+hipfft_plan_z2z|Success|7720|None|
+hipfft_plan_d2z|Success|2568|None|
+rocfft_real_complex|Success|1852|None|
+rocfft_complex_real|Success|1847|None|
+rocfft_callback|Failure|1098|"rocFFT Error: ""Failure"""|"rocFFT error encountered: ""rocfft_status_failure"" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/rocFFT/callback/main.hip:145"
+rocfft_multi_gpu|Success|48|None|
+rocfft_complex_complex|Success|1091|None|
+rocrand_simple_distributions_cpp|Failure|658|"Runtime Error: ""Unhandled C++ Exception"""|terminate called after throwing an instance of 'rocrand_cpp::error'
+rocprim_block_sum|Success|278|None|
+rocprim_device_sum|Success|273|None|
+hipsolver_sygvj|Failure|12872|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipsolver_syevdx|Failure|12820|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipsolver_gesvd|Failure|12855|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipsolver_gels|Failure|12860|"Process Error: ""Terminated by Signal 127"""|
+hipsolver_sygvd|Failure|13427|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipsolver_getrf|Success|12811|None|
+hipsolver_geqrf|Failure|13413|"Tensile Error: ""Missing TensileLibrary.dat"""|
+hipsolver_potrf|Failure|12857|"Process Error: ""Terminated by Signal 127"""|
+hipsolver_syevd|Failure|12821|"Process Error: ""Terminated by Signal 127"""|
+hipsolver_syevj_batched|Failure|12892|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipsolver_syevj|Failure|12873|"Process Error: ""Terminated by Signal 127"""|
+hipcub_device_radix_sort|Success|286|None|
+hipcub_device_sum|Success|283|None|
+rocblas_gemm_strided_batched|Failure|7087|"Tensile Error: ""Missing TensileLibrary.dat"""|
+rocblas_gemv|Failure|6557|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_swap|Failure|6556|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_gemm|Failure|7104|"Tensile Error: ""Missing TensileLibrary.dat"""|
+rocblas_her|Failure|6559|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_nrm2|Failure|6569|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_scal|Failure|6609|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_axpy|Failure|6548|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+rocblas_dot|Failure|6518|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipblas_her|Failure|12861|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipblas_scal|Failure|12860|"Runtime Error: ""Invalid Device Function"""|rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipblas_gemm_strided_batched|Failure|13443|"Tensile Error: ""Missing TensileLibrary.dat"""|
+rocthrust_reduce_sum|Success|278|None|
+rocthrust_remove_points|Success|24|None|
+rocthrust_saxpy|Success|281|None|
+rocthrust_device_ptr|Success|289|None|
+rocthrust_vectors|Success|276|None|
+rocthrust_norm|Success|285|None|
+hip_inline_assembly|Success|341|None|
+hip_streams|Success|296|None|
+hip_hipify|Success|320|None|
+hip_gpu_arch|Success|356|None|
+hip_moving_average|Success|2586|None|
+hip_warp_shuffle|Success|336|None|
+hip_texture_management|Success|380|None|
+hip_runtime_compilation|Success|540|None|
+hip_cooperative_groups|Success|327|None|
+hip_events|Success|405|None|
+hip_bandwidth|Success|6701|None|
+hip_module_api|Success|293|None|
+hip_multi_gpu_data_transfer|Success|38|None|
+hip_device_query|Success|34|None|
+hip_dynamic_shared|Success|272|None|
+hip_llvm_ir_to_executable|Success|319|None|
+hip_device_globals|Success|282|None|
+hip_assembly_to_executable|Success|305|None|
+hip_bit_extract|Success|323|None|
+hip_hello_world|Success|286|None|
+hip_matrix_multiplication|Success|3623|None|
+hip_opengl_interop|Failure|27|"Process Error: ""Terminated by Signal 127"""|A glfw error encountered: Failed to detect any supported platform(65550)
+hip_saxpy|Success|348|None|
+hip_shared_memory|Success|332|None|
+hip_occupancy|Success|314|None|
+reduction_example_v3|Success|5055|None|
+reduction_example_v8|Success|5785|None|
+reduction_benchmark_v2|Success|300180|None|
+reduction_example_v9|Success|4223|None|
+reduction_benchmark_v0|Success|18750|None|
+reduction_example_v4|Success|3793|None|
+reduction_example_v1|Success|5020|None|
+reduction_benchmark_v6|Success|136158|None|
+reduction_benchmark_v5|Success|131239|None|
+reduction_benchmark_v7|Success|168058|None|
+reduction_example_v5|Success|2562|None|
+reduction_benchmark_v8|Success|295938|None|
+reduction_example_v6|Success|2926|None|
+reduction_example_v7|Success|2792|None|
+reduction_test_v3|Success|227430|None|
+reduction_test_v1|Success|402494|None|
+reduction_test_v2|Success|454865|None|
+reduction_test_v6|Success|160068|None|
+reduction_example_v2|Success|5772|None|
+reduction_test_v7|Success|173327|None|
+reduction_test_v4|Success|166817|None|
+reduction_test_v5|Success|150165|None|
+reduction_benchmark_v4|Success|108658|None|
+reduction_test_v10|Success|836808|None|
+reduction_benchmark_v1|Success|266380|None|
+reduction_benchmark_v3|Success|153156|None|
+reduction_benchmark_v10|Success|100324|None|
+reduction_test_v8|Success|441455|None|
+applications_bitonic_sort|Success|328|None|
+applications_histogram|Success|378|None|
+applications_monte_carlo_pi|Failure|461|"Process Error: ""Terminated by Signal 127"""|A hipRAND error occurred at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Applications/monte_carlo_pi/main.hip:153
+applications_floyd_warshall|Success|273|None|
+applications_prefix_sum|Success|281|None|
+applications_convolution|Success|27144|None|
+reduction_test_v9|Success|2343091|None|
+reduction_benchmark_v9|DNF|N/A|N/A|N/A
