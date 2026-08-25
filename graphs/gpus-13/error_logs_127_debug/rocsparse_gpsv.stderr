@@ -1,0 +1,971 @@
+:3:rocdevice.cpp            :465 : 251263204938 us:  Initializing HSA stack.
+:3:rocdevice.cpp            :551 : 251263214072 us:  Enumerated GPU agents = 1
+:3:rocdevice.cpp            :232 : 251263214134 us:  Numa selects cpu agent[0]=0x3e45bc20(fine=0x3e47a350,coarse=0x3e97b470) for gpu agent=0x3e97bb80 CPU<->GPU XGMI=0
+:3:rocsettings.cpp          :284 : 251263214143 us:  Using dev kernel arg wa = 0
+:3:comgrctx.cpp             :33  : 251263214148 us:  Loading COMGR library.
+:3:comgrctx.cpp             :128 : 251263220457 us:  Loaded COMGR library version 3.0.
+:3:rocdevice.cpp            :1786: 251263220648 us:  Gfx Major/Minor/Stepping: 9/0/12
+:3:rocdevice.cpp            :1788: 251263220657 us:  HMM support: 1, XNACK: 1, Direct host access: 0
+:3:rocdevice.cpp            :1790: 251263220660 us:  Max SDMA Read Mask: 0x1, Max SDMA Write Mask: 0x1
+:3:hip_context.cpp          :54  : 251263221657 us:  Direct Dispatch: 1
+:3:hip_code_object.cpp      :964 : 251263224997 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263225021 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263225026 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263225032 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263225045 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263227567 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263227582 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263227587 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263227592 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263227599 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263242207 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263242238 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263242243 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263242249 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263242260 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263244797 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263244816 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263244821 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263244827 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263244834 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263249932 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263249959 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263249975 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263249981 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263249991 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263252362 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263252383 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263252388 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263252393 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263252402 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263254105 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263254121 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263254127 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263254132 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263254139 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263254847 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263254859 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263254864 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263254869 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263254874 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263255566 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263255578 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263255583 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263255588 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263255594 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263256259 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263256271 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263256276 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263256281 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263256293 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263261644 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263261674 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263261679 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263261686 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263261697 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263262785 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263262799 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263262804 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263262809 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263262815 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263290439 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263290467 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263290473 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263290479 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263290490 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263298949 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263298978 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263298983 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263298990 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263299010 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263303517 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263303544 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263303549 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263303555 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263303565 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263313836 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263313867 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263313882 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263313889 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263313900 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263390236 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263390266 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263390271 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263390278 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263390288 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263470089 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263470117 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263470122 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263470129 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263470140 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263471030 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263471043 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263471049 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263471054 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263471060 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251263804476 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263804508 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251263804514 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251263804521 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251263804532 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264101462 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264101495 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264101500 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264101507 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264101528 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264104045 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264104065 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264104070 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264104075 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264104084 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264105977 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264105995 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264106009 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264106015 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264106022 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264110781 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264110820 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264110825 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264110832 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264110843 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264112688 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264112705 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264112710 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264112716 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264112723 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264113407 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264113419 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264113424 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264113429 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264113435 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264114327 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264114339 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264114351 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264114357 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264114363 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264130697 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264130727 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264130732 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264130739 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264130750 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264198809 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264198838 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264198844 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264198850 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264198862 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264676363 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264676394 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264676400 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264676407 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264676418 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264678597 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264678619 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264678624 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264678630 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264678638 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251264817953 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264817984 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251264817990 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251264817997 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251264818025 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265001512 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265001542 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265001548 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265001555 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265001566 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265365884 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265365918 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265365923 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265365930 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265365941 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265391775 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265391806 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265391811 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265391818 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265391829 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265397170 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265397201 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265397206 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265397213 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265397224 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265682852 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265682884 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265682890 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265682897 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265682908 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265684446 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265684462 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265684476 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265684481 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265684487 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265756672 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265756702 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265756707 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265756714 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265756726 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265809717 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265809746 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265809752 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265809758 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265809769 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265878651 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265878681 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265878686 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265878693 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265878704 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265880634 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265880656 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265880661 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265880667 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265880675 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251265883473 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265883493 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251265883498 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251265883504 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251265883522 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251266113063 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266113092 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266113098 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251266113105 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251266113117 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251266292248 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266292281 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266292287 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251266292293 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251266292304 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251266300877 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266300910 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266300915 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251266300922 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251266300933 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251266539676 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266539721 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266539727 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251266539736 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251266539751 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251266542285 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266542315 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266542321 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251266542329 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251266542341 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251266543191 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266543204 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266543217 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251266543223 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251266543228 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251266544398 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266544413 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266544418 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251266544423 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251266544429 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251266568849 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266568879 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251266568884 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251266568891 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251266568902 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251267778408 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251267778435 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251267778441 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251267778448 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251267778459 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268291230 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268291263 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268291269 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268291277 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268291288 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268296431 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268296466 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268296472 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268296479 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268296503 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268301921 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268301955 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268301961 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268301968 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268301980 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268303562 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268303577 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268303582 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268303588 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268303593 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268571895 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268571924 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268571930 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268571937 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268571948 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268576962 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268576992 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268576997 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268577011 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268577023 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268577971 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268577985 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268577990 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268577995 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268578007 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268886194 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268886225 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268886240 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268886248 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268886259 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268893232 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268893263 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268893268 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268893275 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268893287 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268894691 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268894705 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268894710 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268894715 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268894722 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251268895524 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268895536 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251268895541 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251268895546 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251268895552 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269208368 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269208400 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269208406 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269208413 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269208424 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269213162 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269213194 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269213199 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269213206 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269213229 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269216576 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269216600 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269216605 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269216611 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269216620 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269219035 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269219054 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269219059 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269219065 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269219072 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269231320 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269231350 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269231356 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269231362 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269231373 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269232634 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269232647 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269232652 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269232658 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269232664 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269233620 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269233632 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269233637 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269233642 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269233648 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269242944 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269242974 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269242989 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269242996 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269243017 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269274165 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269274195 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269274200 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269274207 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269274217 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269321423 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269321454 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269321459 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269321466 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269321477 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269339771 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269339800 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269339806 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269339812 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269339824 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269341549 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269341570 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269341575 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269341580 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269341588 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269342520 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269342532 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269342537 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269342543 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269342559 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269343299 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269343310 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269343315 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269343320 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269343325 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269345036 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269345050 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269345054 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269345060 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269345066 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269345745 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269345757 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269345762 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269345767 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269345772 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269346421 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269346433 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269346438 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269346443 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269346448 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269607014 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269607048 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269607054 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269607062 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269607073 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269652843 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269652872 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269652887 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269652894 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269652905 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269655067 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269655087 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269655092 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269655098 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269655106 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251269660091 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269660131 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251269660136 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251269660143 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251269660154 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270234049 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270234084 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270234090 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270234098 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270234112 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270284820 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270284862 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270284867 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270284875 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270284887 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270286265 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270286285 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270286291 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270286296 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270286312 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270287671 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270287693 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270287698 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270287704 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270287711 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270293099 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270293141 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270293146 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270293155 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270293168 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270298859 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270298891 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270298896 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270298903 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270298914 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270304256 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270304288 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270304293 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270304300 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270304311 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270309439 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270309471 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270309476 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270309484 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270309497 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270320170 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270320203 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270320218 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270320224 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270320236 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270329029 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270329059 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270329065 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270329072 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270329083 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270337394 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270337425 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270337431 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270337438 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270337448 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270338368 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270338381 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270338386 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270338391 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270338397 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270342543 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270342578 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270342584 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270342590 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270342601 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270432486 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270432518 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270432523 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270432530 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270432550 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270436388 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270436415 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270436420 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270436427 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270436437 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270439105 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270439125 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270439130 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270439136 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270439144 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270440149 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270440163 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270440168 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270440173 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270440178 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251270730971 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270731027 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251270731033 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251270731040 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251270731051 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271067713 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271067748 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271067753 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271067760 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271067771 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271099425 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271099458 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271099472 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271099479 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271099490 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271103082 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271103107 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271103112 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271103119 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271103129 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271146037 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271146068 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271146074 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271146081 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271146092 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271173430 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271173461 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271173466 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271173472 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271173484 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271174367 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271174379 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271174384 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271174390 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271174395 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271215850 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271215880 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271215885 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271215892 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271215912 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271255138 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271255169 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271255175 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271255182 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271255193 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271260507 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271260537 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271260543 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271260550 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271260561 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271264058 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271264086 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271264091 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271264098 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271264108 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271269930 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271269961 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271269967 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271269973 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271269984 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271271308 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271271324 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271271329 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271271335 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271271341 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271394912 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271394942 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271394956 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271394962 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271394973 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271395987 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271396010 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271396015 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271396021 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271396027 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271396746 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271396758 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271396763 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271396768 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271396774 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271397920 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271397935 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271397940 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271397946 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271397951 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271399996 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271400024 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271400030 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271400035 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271400043 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271401310 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271401322 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271401326 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271401331 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271401345 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271403356 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271403371 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271403376 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271403381 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271403388 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271405145 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271405160 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271405165 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271405170 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271405176 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271406667 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271406682 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271406687 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271406692 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271406699 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271407519 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271407532 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271407537 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271407542 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271407548 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271443821 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271443852 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271443859 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271443869 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271443880 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271447721 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271447747 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271447761 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271447768 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271447777 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271449019 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271449032 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271449037 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271449043 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271449048 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271485891 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271485921 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271485927 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271485933 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271485945 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271487443 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271487458 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271487463 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271487468 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271487475 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271489119 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271489133 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271489137 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271489143 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271489149 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271490143 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271490155 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271490160 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271490165 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271490178 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271491012 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271491024 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271491029 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271491034 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271491039 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251271491680 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271491692 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251271491697 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251271491702 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251271491708 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251274756847 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274756884 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274756891 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251274771085 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251274771127 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251274773151 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274773170 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274773177 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251274773185 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251274773194 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251274781438 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274781463 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274781471 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251274781478 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251274781489 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251274782668 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274782693 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274782698 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251274782704 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251274782709 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251274783550 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274783563 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274783568 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251274783573 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251274783579 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251274888379 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274888410 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274888416 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251274888423 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251274888435 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251274928595 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274928626 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274928631 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251274928638 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251274928649 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251274930316 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274930338 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274930344 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251274930349 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251274930357 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_code_object.cpp      :964 : 251274937591 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274937622 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_code_object.cpp      :964 : 251274937627 us:  amd::Comgr::get_data() return 0 size for agent_triple_target_ids[0]=amdgcn-amd-amdhsa--gfx90c:xnack+
+:1:hip_fatbin.cpp           :780 : 251274937633 us:  Cannot find CO in the bundle /usr/lib64/librocsparse.so.1.0 for ISA: amdgcn-amd-amdhsa--gfx90c:xnack+
+:3:hip_platform.cpp         :740 : 251274937654 us:  init: Returned hipErrorNoBinaryForGpu : continue parsing remaining modules
+:3:hip_memory.cpp           :756 : 251274938357 us:  [32m hipMalloc ( 0x7fffa6f45468, 43440 ) [0m
+:3:rocdevice.cpp            :2411: 251274939082 us:  Device=0x3e99c1f0, freeMem_ = 0x366fa8650
+:3:hip_memory.cpp           :758 : 251274939092 us:  hipMalloc: Returned hipSuccess : 0x7f2493a00000: duration: 735 us
+:3:hip_memory.cpp           :756 : 251274939098 us:  [32m hipMalloc ( 0x7fffa6f45460, 43440 ) [0m
+:3:rocdevice.cpp            :2411: 251274939108 us:  Device=0x3e99c1f0, freeMem_ = 0x366f9dca0
+:3:hip_memory.cpp           :758 : 251274939112 us:  hipMalloc: Returned hipSuccess : 0x7f2493a0b000: duration: 14 us
+:3:hip_memory.cpp           :756 : 251274939114 us:  [32m hipMalloc ( 0x7fffa6f45458, 43440 ) [0m
+:3:rocdevice.cpp            :2411: 251274939118 us:  Device=0x3e99c1f0, freeMem_ = 0x366f932f0
+:3:hip_memory.cpp           :758 : 251274939121 us:  hipMalloc: Returned hipSuccess : 0x7f2493a16000: duration: 7 us
+:3:hip_memory.cpp           :756 : 251274939124 us:  [32m hipMalloc ( 0x7fffa6f45450, 43440 ) [0m
+:3:rocdevice.cpp            :2411: 251274939127 us:  Device=0x3e99c1f0, freeMem_ = 0x366f88940
+:3:hip_memory.cpp           :758 : 251274939130 us:  hipMalloc: Returned hipSuccess : 0x7f2493a21000: duration: 6 us
+:3:hip_memory.cpp           :756 : 251274939133 us:  [32m hipMalloc ( 0x7fffa6f45448, 43440 ) [0m
+:3:rocdevice.cpp            :2411: 251274939136 us:  Device=0x3e99c1f0, freeMem_ = 0x366f7df90
+:3:hip_memory.cpp           :758 : 251274939138 us:  hipMalloc: Returned hipSuccess : 0x7f2493a2c000: duration: 5 us
+:3:hip_memory.cpp           :756 : 251274939141 us:  [32m hipMalloc ( 0x7fffa6f45440, 43440 ) [0m
+:3:rocdevice.cpp            :2411: 251274939144 us:  Device=0x3e99c1f0, freeMem_ = 0x366f735e0
+:3:hip_memory.cpp           :758 : 251274939147 us:  hipMalloc: Returned hipSuccess : 0x7f2493a37000: duration: 6 us
+:3:hip_memory.cpp           :795 : 251274939157 us:  [32m hipMemcpy ( 0x7f2493a00000, 0x7fffa6f4fe20, 43440, hipMemcpyHostToDevice ) [0m
+:3:rocdevice.cpp            :3052: 251274939176 us:  Number of allocated hardware queues with low priority: 0, with normal priority: 0, with high priority: 0, maximum per priority is: 4
+:3:rocdevice.cpp            :3131: 251274959020 us:  Created SWq=0x7f25a1dea000 to map on HWq=0x7f24a0200000 with size 16384 with priority 1, cooperative: 0
+:3:rocdevice.cpp            :3223: 251274959062 us:  acquireQueue refCount: 0x7f24a0200000 (1)
+:3:devprogram.cpp           :2658: 251275175257 us:  Using Code Object V5.
+:3:rocvirtual.cpp           :534 : 251275177394 us:  Set Handler: handle(0x7f25819fd600), timestamp(0x3ee082b0)
+:3:rocvirtual.hpp           :57  : 251275177411 us:  Host active wait for Signal = (0x7f25819fd600) for -1 ns
+:3:hip_memory.cpp           :796 : 251275177449 us:  hipMemcpy: Returned hipSuccess : : duration: 238292 us
+:3:hip_memory.cpp           :795 : 251275177458 us:  [32m hipMemcpy ( 0x7f2493a0b000, 0x7fffa6f5a7d0, 43440, hipMemcpyHostToDevice ) [0m
+:3:rocvirtual.cpp           :534 : 251275177480 us:  Set Handler: handle(0x7f25819fd680), timestamp(0x3ee081a0)
+:3:rocvirtual.cpp           :227 : 251275177485 us:  Handler: value(0), timestamp(0x3f76d570), handle(0x7f25819fd600)
+:3:rocvirtual.hpp           :57  : 251275177485 us:  Host active wait for Signal = (0x7f25819fd680) for -1 ns
+:3:hip_memory.cpp           :796 : 251275177505 us:  hipMemcpy: Returned hipSuccess : : duration: 47 us
+:3:hip_memory.cpp           :795 : 251275177509 us:  [32m hipMemcpy ( 0x7f2493a16000, 0x7fffa6f65180, 43440, hipMemcpyHostToDevice ) [0m
+:3:rocvirtual.cpp           :534 : 251275177525 us:  Set Handler: handle(0x7f25819fd700), timestamp(0x3ee08090)
+:3:rocvirtual.hpp           :57  : 251275177529 us:  Host active wait for Signal = (0x7f25819fd700) for -1 ns
+:3:hip_memory.cpp           :796 : 251275177543 us:  hipMemcpy: Returned hipSuccess : : duration: 34 us
+:3:hip_memory.cpp           :795 : 251275177554 us:  [32m hipMemcpy ( 0x7f2493a21000, 0x7fffa6f6fb30, 43440, hipMemcpyHostToDevice ) [0m
+:3:rocvirtual.cpp           :534 : 251275177571 us:  Set Handler: handle(0x7f25819fd780), timestamp(0x3ee06620)
+:3:rocvirtual.hpp           :57  : 251275177575 us:  Host active wait for Signal = (0x7f25819fd780) for -1 ns
+:3:hip_memory.cpp           :796 : 251275177583 us:  hipMemcpy: Returned hipSuccess : : duration: 29 us
+:3:hip_memory.cpp           :795 : 251275177586 us:  [32m hipMemcpy ( 0x7f2493a2c000, 0x7fffa6f7a4e0, 43440, hipMemcpyHostToDevice ) [0m
+:3:rocvirtual.cpp           :534 : 251275177600 us:  Set Handler: handle(0x7f25819fd800), timestamp(0x3ee06550)
+:3:rocvirtual.hpp           :57  : 251275177603 us:  Host active wait for Signal = (0x7f25819fd800) for -1 ns
+:3:hip_memory.cpp           :796 : 251275177615 us:  hipMemcpy: Returned hipSuccess : : duration: 29 us
+:3:hip_memory.cpp           :795 : 251275177619 us:  [32m hipMemcpy ( 0x7f2493a37000, 0x7fffa6f45470, 43440, hipMemcpyHostToDevice ) [0m
+:3:rocvirtual.cpp           :534 : 251275177636 us:  Set Handler: handle(0x7f25819fd280), timestamp(0x3f824ba0)
+:3:rocvirtual.hpp           :57  : 251275177639 us:  Host active wait for Signal = (0x7f25819fd280) for -1 ns
+:3:hip_memory.cpp           :796 : 251275177652 us:  hipMemcpy: Returned hipSuccess : : duration: 33 us
+:3:hip_device_runtime.cpp   :657 : 251275177667 us:  [32m hipGetDevice ( 0x3ed96340 ) [0m
+:3:hip_device_runtime.cpp   :669 : 251275177672 us:  hipGetDevice: Returned hipSuccess : 0
+:3:hip_device.cpp           :654 : 251275177675 us:  [32m hipGetDevicePropertiesR0600 ( 0x3ed96348, 0 ) [0m
+:3:hip_device.cpp           :656 : 251275177679 us:  hipGetDevicePropertiesR0600: Returned hipSuccess : 
+:3:hip_memory.cpp           :756 : 251275177683 us:  [32m hipMalloc ( 0x3ed96928, 1048576 ) [0m
+:3:rocdevice.cpp            :2411: 251275177690 us:  Device=0x3e99c1f0, freeMem_ = 0x366e735e0
+:3:hip_memory.cpp           :758 : 251275177694 us:  hipMalloc: Returned hipSuccess : 0x7f2493a42000: duration: 11 us
+:3:hip_memory.cpp           :756 : 251275177697 us:  [32m hipMalloc ( 0x3ed96930, 4 ) [0m
+:3:rocdevice.cpp            :2411: 251275177700 us:  Device=0x3e99c1f0, freeMem_ = 0x366e735dc
+:3:hip_memory.cpp           :758 : 251275177703 us:  hipMalloc: Returned hipSuccess : 0x7f2493b42000: duration: 6 us
+:3:hip_memory.cpp           :756 : 251275177706 us:  [32m hipMalloc ( 0x3ed96938, 8 ) [0m
+:3:rocdevice.cpp            :2411: 251275177709 us:  Device=0x3e99c1f0, freeMem_ = 0x366e735d4
+:3:hip_memory.cpp           :758 : 251275177712 us:  hipMalloc: Returned hipSuccess : 0x7f2493b43000: duration: 6 us
+:3:hip_memory.cpp           :756 : 251275177715 us:  [32m hipMalloc ( 0x3ed96940, 8 ) [0m
+:3:rocdevice.cpp            :2411: 251275177718 us:  Device=0x3e99c1f0, freeMem_ = 0x366e735cc
+:3:hip_memory.cpp           :758 : 251275177722 us:  hipMalloc: Returned hipSuccess : 0x7f2493b44000: duration: 7 us
+:3:hip_memory.cpp           :756 : 251275177725 us:  [32m hipMalloc ( 0x3ed96948, 16 ) [0m
+:3:rocdevice.cpp            :2411: 251275177728 us:  Device=0x3e99c1f0, freeMem_ = 0x366e735bc
+:3:hip_memory.cpp           :758 : 251275177731 us:  hipMalloc: Returned hipSuccess : 0x7f2493b45000: duration: 6 us
+:3:hip_platform.cpp         :237 : 251275177751 us:  [32m __hipPushCallConfiguration ( {1,1,1}, {1,1,1}, 0, stream:<null> ) [0m
+:3:hip_platform.cpp         :241 : 251275177755 us:  __hipPushCallConfiguration: Returned hipSuccess : 
+:3:hip_platform.cpp         :246 : 251275177761 us:  [32m __hipPopCallConfiguration ( {0,0,0}, {2147483648,2147483648,0}, 0x7fffa6f3a7a0, 0x7fffa6f3a7d0 ) [0m
+:3:hip_platform.cpp         :255 : 251275177765 us:  __hipPopCallConfiguration: Returned hipSuccess : 
+:3:hip_module.cpp           :744 : 251275177774 us:  [32m hipLaunchKernel ( 0x7f2586e30048, {1,1,1}, {1,1,1}, 0x7fffa6f3a7c0, 0, stream:<null> ) [0m
+:3:hip_module.cpp           :745 : 251275177782 us:  hipLaunchKernel: Returned hipErrorInvalidDeviceFunction : : duration: 8 us
+:3:hip_memory.cpp           :3487: 251275177796 us:  [32m hipMemsetAsync ( 0x7f2493b42000, 0, 4, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275177802 us:  Arg0: void* buf = ptr:0x7f2493b42000
+:3:rocvirtual.cpp           :781 : 251275177805 us:  Arg0: void* buf = ptr:0x7f2493b42000 obj:[0x7f2493b42000-0x7f2493b42004]
+:3:rocvirtual.cpp           :763 : 251275177807 us:  Arg1: uchar* pattern = ptr:0x7f2492800000
+:3:rocvirtual.cpp           :857 : 251275177810 us:  Arg2: uint pattern_size = val:1
+:3:rocvirtual.cpp           :857 : 251275177812 us:  Arg3: uint alignment = val:1
+:3:rocvirtual.cpp           :857 : 251275177815 us:  Arg4: ulong end_ptr = val:139795073605636
+:3:rocvirtual.cpp           :857 : 251275177818 us:  Arg5: uint next_chunk = val:256
+:3:rocvirtual.cpp           :3237: 251275177822 us:  ShaderName : __amd_rocclr_fillBufferAligned
+:3:rocvirtual.cpp           :3451: 251275177826 us:  KernargSegmentByteSize = 296 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :3488: 251275177835 us:  hipMemsetAsync: Returned hipSuccess : 
+:3:hip_memory.cpp           :3487: 251275177838 us:  [32m hipMemsetAsync ( 0x7f2493b43000, 0, 8, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275177842 us:  Arg0: void* buf = ptr:0x7f2493b43000
+:3:rocvirtual.cpp           :781 : 251275177845 us:  Arg0: void* buf = ptr:0x7f2493b43000 obj:[0x7f2493b43000-0x7f2493b43008]
+:3:rocvirtual.cpp           :763 : 251275177847 us:  Arg1: uchar* pattern = ptr:0x7f2492800300
+:3:rocvirtual.cpp           :857 : 251275177850 us:  Arg2: uint pattern_size = val:1
+:3:rocvirtual.cpp           :857 : 251275177852 us:  Arg3: uint alignment = val:1
+:3:rocvirtual.cpp           :857 : 251275177854 us:  Arg4: ulong end_ptr = val:139795073609736
+:3:rocvirtual.cpp           :857 : 251275177857 us:  Arg5: uint next_chunk = val:256
+:3:rocvirtual.cpp           :3237: 251275177859 us:  ShaderName : __amd_rocclr_fillBufferAligned
+:3:rocvirtual.cpp           :3451: 251275177861 us:  KernargSegmentByteSize = 296 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :3488: 251275177864 us:  hipMemsetAsync: Returned hipSuccess : 
+:3:hip_memory.cpp           :3487: 251275177867 us:  [32m hipMemsetAsync ( 0x7f2493b44000, 0, 8, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275177871 us:  Arg0: void* buf = ptr:0x7f2493b44000
+:3:rocvirtual.cpp           :781 : 251275177873 us:  Arg0: void* buf = ptr:0x7f2493b44000 obj:[0x7f2493b44000-0x7f2493b44008]
+:3:rocvirtual.cpp           :763 : 251275177875 us:  Arg1: uchar* pattern = ptr:0x7f2492800600
+:3:rocvirtual.cpp           :857 : 251275177878 us:  Arg2: uint pattern_size = val:1
+:3:rocvirtual.cpp           :857 : 251275177880 us:  Arg3: uint alignment = val:1
+:3:rocvirtual.cpp           :857 : 251275177883 us:  Arg4: ulong end_ptr = val:139795073613832
+:3:rocvirtual.cpp           :857 : 251275177886 us:  Arg5: uint next_chunk = val:256
+:3:rocvirtual.cpp           :3237: 251275177888 us:  ShaderName : __amd_rocclr_fillBufferAligned
+:3:rocvirtual.cpp           :3451: 251275177890 us:  KernargSegmentByteSize = 296 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :3488: 251275177893 us:  hipMemsetAsync: Returned hipSuccess : 
+:3:hip_memory.cpp           :3487: 251275177896 us:  [32m hipMemsetAsync ( 0x7f2493b45000, 0, 16, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275177899 us:  Arg0: void* buf = ptr:0x7f2493b45000
+:3:rocvirtual.cpp           :781 : 251275177902 us:  Arg0: void* buf = ptr:0x7f2493b45000 obj:[0x7f2493b45000-0x7f2493b45010]
+:3:rocvirtual.cpp           :763 : 251275177904 us:  Arg1: uchar* pattern = ptr:0x7f2492800900
+:3:rocvirtual.cpp           :857 : 251275177907 us:  Arg2: uint pattern_size = val:1
+:3:rocvirtual.cpp           :857 : 251275177909 us:  Arg3: uint alignment = val:16
+:3:rocvirtual.cpp           :857 : 251275177911 us:  Arg4: ulong end_ptr = val:139795073617936
+:3:rocvirtual.cpp           :857 : 251275177913 us:  Arg5: uint next_chunk = val:256
+:3:rocvirtual.cpp           :3237: 251275177916 us:  ShaderName : __amd_rocclr_fillBufferAligned
+:3:rocvirtual.cpp           :3451: 251275177922 us:  KernargSegmentByteSize = 296 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :3488: 251275177925 us:  hipMemsetAsync: Returned hipSuccess : 
+:3:hip_memory.cpp           :1631: 251275177934 us:  [32m hipMemcpyAsync ( 0x7f2493b42000, 0x7fffa6f3a7bc, 4, hipMemcpyHostToDevice, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275177942 us:  Arg0: uchar* src = ptr:0x7f249223fc00
+:3:rocvirtual.cpp           :763 : 251275177944 us:  Arg1: uchar* dst = ptr:0x7f2493b42000
+:3:rocvirtual.cpp           :857 : 251275177946 us:  Arg2: ulong size = val:4
+:3:rocvirtual.cpp           :857 : 251275177949 us:  Arg3: uint remainder = val:4
+:3:rocvirtual.cpp           :857 : 251275177951 us:  Arg4: uint aligned_size = val:16
+:3:rocvirtual.cpp           :857 : 251275177953 us:  Arg5: ulong end_ptr = val:139795073605632
+:3:rocvirtual.cpp           :857 : 251275177955 us:  Arg6: uint next_chunk = val:512
+:3:rocvirtual.cpp           :3237: 251275177958 us:  ShaderName : __amd_rocclr_copyBuffer
+:3:rocvirtual.cpp           :3451: 251275177960 us:  KernargSegmentByteSize = 304 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :1632: 251275177963 us:  hipMemcpyAsync: Returned hipSuccess : : duration: 29 us
+:3:hip_memory.cpp           :1631: 251275177966 us:  [32m hipMemcpyAsync ( 0x7f2493b43000, 0x7fffa6f3a7d0, 8, hipMemcpyHostToDevice, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275177972 us:  Arg0: uchar* src = ptr:0x7f249223fd00
+:3:rocvirtual.cpp           :763 : 251275177974 us:  Arg1: uchar* dst = ptr:0x7f2493b43000
+:3:rocvirtual.cpp           :857 : 251275177977 us:  Arg2: ulong size = val:8
+:3:rocvirtual.cpp           :857 : 251275177979 us:  Arg3: uint remainder = val:8
+:3:rocvirtual.cpp           :857 : 251275177981 us:  Arg4: uint aligned_size = val:16
+:3:rocvirtual.cpp           :857 : 251275177983 us:  Arg5: ulong end_ptr = val:139795073609728
+:3:rocvirtual.cpp           :857 : 251275177986 us:  Arg6: uint next_chunk = val:512
+:3:rocvirtual.cpp           :3237: 251275177988 us:  ShaderName : __amd_rocclr_copyBuffer
+:3:rocvirtual.cpp           :3451: 251275177990 us:  KernargSegmentByteSize = 304 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :1632: 251275177994 us:  hipMemcpyAsync: Returned hipSuccess : : duration: 28 us
+:3:hip_memory.cpp           :1631: 251275177997 us:  [32m hipMemcpyAsync ( 0x7f2493b44000, 0x7fffa6f3a7c0, 8, hipMemcpyHostToDevice, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275178010 us:  Arg0: uchar* src = ptr:0x7f249223fe00
+:3:rocvirtual.cpp           :763 : 251275178012 us:  Arg1: uchar* dst = ptr:0x7f2493b44000
+:3:rocvirtual.cpp           :857 : 251275178015 us:  Arg2: ulong size = val:8
+:3:rocvirtual.cpp           :857 : 251275178017 us:  Arg3: uint remainder = val:8
+:3:rocvirtual.cpp           :857 : 251275178019 us:  Arg4: uint aligned_size = val:16
+:3:rocvirtual.cpp           :857 : 251275178022 us:  Arg5: ulong end_ptr = val:139795073613824
+:3:rocvirtual.cpp           :857 : 251275178024 us:  Arg6: uint next_chunk = val:512
+:3:rocvirtual.cpp           :3237: 251275178026 us:  ShaderName : __amd_rocclr_copyBuffer
+:3:rocvirtual.cpp           :3451: 251275178028 us:  KernargSegmentByteSize = 304 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :1632: 251275178031 us:  hipMemcpyAsync: Returned hipSuccess : : duration: 34 us
+:3:hip_memory.cpp           :1631: 251275178035 us:  [32m hipMemcpyAsync ( 0x7f2493b45000, 0x7fffa6f3a7a0, 16, hipMemcpyHostToDevice, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275178040 us:  Arg0: uchar* src = ptr:0x7f249223ff00
+:3:rocvirtual.cpp           :763 : 251275178042 us:  Arg1: uchar* dst = ptr:0x7f2493b45000
+:3:rocvirtual.cpp           :857 : 251275178045 us:  Arg2: ulong size = val:16
+:3:rocvirtual.cpp           :857 : 251275178047 us:  Arg3: uint remainder = val:0
+:3:rocvirtual.cpp           :857 : 251275178049 us:  Arg4: uint aligned_size = val:16
+:3:rocvirtual.cpp           :857 : 251275178052 us:  Arg5: ulong end_ptr = val:139795073617936
+:3:rocvirtual.cpp           :857 : 251275178058 us:  Arg6: uint next_chunk = val:512
+:3:rocvirtual.cpp           :3237: 251275178061 us:  ShaderName : __amd_rocclr_copyBuffer
+:3:rocvirtual.cpp           :3451: 251275178064 us:  KernargSegmentByteSize = 304 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :1632: 251275178067 us:  hipMemcpyAsync: Returned hipSuccess : : duration: 32 us
+:3:hip_stream.cpp           :384 : 251275178071 us:  [32m hipStreamSynchronize ( stream:<null> ) [0m
+:3:rocvirtual.cpp           :534 : 251275178078 us:  Set Handler: handle(0x7f25819fd200), timestamp(0x3efb2a90)
+:3:rocvirtual.cpp           :227 : 251275178089 us:  Handler: value(0), timestamp(0x3f76d500), handle(0x7f25819fd680)
+:3:rocvirtual.cpp           :227 : 251275178093 us:  Handler: value(0), timestamp(0x3efb29e0), handle(0x7f25819fd200)
+:3:rocvirtual.cpp           :227 : 251275178096 us:  Handler: value(0), timestamp(0x3f824af0), handle(0x7f25819fd280)
+:3:rocvirtual.cpp           :227 : 251275178099 us:  Handler: value(0), timestamp(0x3f824940), handle(0x7f25819fd800)
+:3:rocvirtual.cpp           :227 : 251275178102 us:  Handler: value(0), timestamp(0x3f789bd0), handle(0x7f25819fd780)
+:3:rocvirtual.cpp           :227 : 251275178105 us:  Handler: value(0), timestamp(0x3f76b3f0), handle(0x7f25819fd700)
+:3:hip_stream.cpp           :385 : 251275178123 us:  hipStreamSynchronize: Returned hipSuccess : 
+:3:hip_memory.cpp           :756 : 251275178132 us:  [32m hipMalloc ( 0x7fffa6f45428, 768 ) [0m
+:3:rocdevice.cpp            :2411: 251275178137 us:  Device=0x3e99c1f0, freeMem_ = 0x366e732bc
+:3:hip_memory.cpp           :758 : 251275178140 us:  hipMalloc: Returned hipSuccess : 0x7f2493b46000: duration: 8 us
+:3:hip_memory.cpp           :3487: 251275178145 us:  [32m hipMemsetAsync ( 0x7f2493b46000, 0, 80, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275178149 us:  Arg0: void* buf = ptr:0x7f2493b46000
+:3:rocvirtual.cpp           :781 : 251275178152 us:  Arg0: void* buf = ptr:0x7f2493b46000 obj:[0x7f2493b46000-0x7f2493b46300]
+:3:rocvirtual.cpp           :763 : 251275178154 us:  Arg1: uchar* pattern = ptr:0x7f2492801200
+:3:rocvirtual.cpp           :857 : 251275178156 us:  Arg2: uint pattern_size = val:1
+:3:rocvirtual.cpp           :857 : 251275178158 us:  Arg3: uint alignment = val:16
+:3:rocvirtual.cpp           :857 : 251275178161 us:  Arg4: ulong end_ptr = val:139795073622096
+:3:rocvirtual.cpp           :857 : 251275178163 us:  Arg5: uint next_chunk = val:256
+:3:rocvirtual.cpp           :3237: 251275178166 us:  ShaderName : __amd_rocclr_fillBufferAligned
+:3:rocvirtual.cpp           :3451: 251275178169 us:  KernargSegmentByteSize = 296 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :3488: 251275178172 us:  hipMemsetAsync: Returned hipSuccess : 
+:3:hip_memory.cpp           :3487: 251275178175 us:  [32m hipMemsetAsync ( 0x7f2493b46100, 0, 80, stream:<null> ) [0m
+:3:rocvirtual.cpp           :763 : 251275178178 us:  Arg0: void* buf = ptr:0x7f2493b46100
+:3:rocvirtual.cpp           :781 : 251275178181 us:  Arg0: void* buf = ptr:0x7f2493b46100 obj:[0x7f2493b46000-0x7f2493b46300]
+:3:rocvirtual.cpp           :763 : 251275178183 us:  Arg1: uchar* pattern = ptr:0x7f2492801500
+:3:rocvirtual.cpp           :857 : 251275178186 us:  Arg2: uint pattern_size = val:1
+:3:rocvirtual.cpp           :857 : 251275178188 us:  Arg3: uint alignment = val:16
+:3:rocvirtual.cpp           :857 : 251275178190 us:  Arg4: ulong end_ptr = val:139795073622352
+:3:rocvirtual.cpp           :857 : 251275178193 us:  Arg5: uint next_chunk = val:256
+:3:rocvirtual.cpp           :3237: 251275178195 us:  ShaderName : __amd_rocclr_fillBufferAligned
+:3:rocvirtual.cpp           :3451: 251275178197 us:  KernargSegmentByteSize = 296 KernargSegmentAlignment = 128
+:3:hip_memory.cpp           :3488: 251275178200 us:  hipMemsetAsync: Returned hipSuccess : 
+:3:hip_platform.cpp         :237 : 251275178204 us:  [32m __hipPushCallConfiguration ( {1,1,1}, {256,1,1}, 0, stream:<null> ) [0m
+:3:hip_platform.cpp         :241 : 251275178209 us:  __hipPushCallConfiguration: Returned hipSuccess : 
+:3:hip_platform.cpp         :246 : 251275178217 us:  [32m __hipPopCallConfiguration ( {1,0,1064752176}, {965911296,3062632518,2800986088}, 0x7fffa6f3a708, 0x7fffa6f3a700 ) [0m
+:3:hip_platform.cpp         :255 : 251275178222 us:  __hipPopCallConfiguration: Returned hipSuccess : 
+:3:hip_module.cpp           :744 : 251275178226 us:  [32m hipLaunchKernel ( 0x7f2586e4f8b8, {1,1,1}, {256,1,1}, 0x7fffa6f3a750, 0, stream:<null> ) [0m
+:3:hip_module.cpp           :745 : 251275178232 us:  hipLaunchKernel: Returned hipErrorInvalidDeviceFunction : : duration: 6 us
+:3:hip_platform.cpp         :237 : 251275178235 us:  [32m __hipPushCallConfiguration ( {1,1,1}, {256,1,1}, 0, stream:<null> ) [0m
+:3:hip_platform.cpp         :241 : 251275178239 us:  __hipPushCallConfiguration: Returned hipSuccess : 
+:3:hip_platform.cpp         :246 : 251275178242 us:  [32m __hipPopCallConfiguration ( {98,0,965911296}, {8096,196607,1054434112}, 0x7fffa6f3a690, 0x7fffa6f3a688 ) [0m
+:3:hip_platform.cpp         :255 : 251275178246 us:  __hipPopCallConfiguration: Returned hipSuccess : 
+:3:hip_module.cpp           :744 : 251275178249 us:  [32m hipLaunchKernel ( 0x7f2586e4f8c0, {1,1,1}, {256,1,1}, 0x7fffa6f3a6e0, 0, stream:<null> ) [0m
+:3:hip_module.cpp           :745 : 251275178254 us:  hipLaunchKernel: Returned hipErrorInvalidDeviceFunction : : duration: 5 us
+:3:hip_memory.cpp           :795 : 251275178257 us:  [32m hipMemcpy ( 0x7fffa6f45470, 0x7f2493a37000, 43440, hipMemcpyDeviceToHost ) [0m
+:3:rocvirtual.hpp           :57  : 251275178265 us:  Host active wait for Signal = (0x7f25819ff100) for -1 ns
+:3:rocvirtual.hpp           :57  : 251275178281 us:  Host active wait for Signal = (0x7f25819ff080) for -1 ns
+:3:rocvirtual.cpp           :534 : 251275178326 us:  Set Handler: handle(0x7f25819fd180), timestamp(0x3f824a70)
+:3:rocvirtual.hpp           :57  : 251275178329 us:  Host active wait for Signal = (0x7f25819fd180) for -1 ns
+:3:hip_memory.cpp           :796 : 251275178339 us:  hipMemcpy: Returned hipSuccess : : duration: 82 us
+:3:rocvirtual.cpp           :227 : 251275178343 us:  Handler: value(0), timestamp(0x3efb2d30), handle(0x7f25819fd180)
+:3:hip_memory.cpp           :772 : 251275178345 us:  [32m hipFree ( 0x7f2493a42000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178368 us:  Device=0x3e99c1f0, freeMem_ = 0x366f732bc
+:3:hip_memory.cpp           :774 : 251275178372 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178374 us:  [32m hipFree ( 0x7f2493b42000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178378 us:  Device=0x3e99c1f0, freeMem_ = 0x366f732c0
+:3:hip_memory.cpp           :774 : 251275178381 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178383 us:  [32m hipFree ( 0x7f2493b43000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178386 us:  Device=0x3e99c1f0, freeMem_ = 0x366f732c8
+:3:hip_memory.cpp           :774 : 251275178389 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178391 us:  [32m hipFree ( 0x7f2493b44000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178396 us:  Device=0x3e99c1f0, freeMem_ = 0x366f732d0
+:3:hip_memory.cpp           :774 : 251275178398 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178401 us:  [32m hipFree ( 0x7f2493b45000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178404 us:  Device=0x3e99c1f0, freeMem_ = 0x366f732e0
+:3:hip_memory.cpp           :774 : 251275178407 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178411 us:  [32m hipFree ( 0x7f2493b46000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178415 us:  Device=0x3e99c1f0, freeMem_ = 0x366f735e0
+:3:hip_memory.cpp           :774 : 251275178417 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178420 us:  [32m hipFree ( 0x7f2493a00000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178423 us:  Device=0x3e99c1f0, freeMem_ = 0x366f7df90
+:3:hip_memory.cpp           :774 : 251275178426 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178433 us:  [32m hipFree ( 0x7f2493a0b000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178436 us:  Device=0x3e99c1f0, freeMem_ = 0x366f88940
+:3:hip_memory.cpp           :774 : 251275178439 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178442 us:  [32m hipFree ( 0x7f2493a16000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178445 us:  Device=0x3e99c1f0, freeMem_ = 0x366f932f0
+:3:hip_memory.cpp           :774 : 251275178449 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178451 us:  [32m hipFree ( 0x7f2493a21000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178454 us:  Device=0x3e99c1f0, freeMem_ = 0x366f9dca0
+:3:hip_memory.cpp           :774 : 251275178457 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178459 us:  [32m hipFree ( 0x7f2493a2c000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178462 us:  Device=0x3e99c1f0, freeMem_ = 0x366fa8650
+:3:hip_memory.cpp           :774 : 251275178465 us:  hipFree: Returned hipSuccess : 
+:3:hip_memory.cpp           :772 : 251275178467 us:  [32m hipFree ( 0x7f2493a37000 ) [0m
+:3:rocdevice.cpp            :2411: 251275178470 us:  Device=0x3e99c1f0, freeMem_ = 0x366fb3000
+:3:hip_memory.cpp           :774 : 251275178473 us:  hipFree: Returned hipSuccess : 
+:3:rocdevice.cpp            :3255: 251275189619 us:  releaseQueue refCount:0x7f24a0200000 (0)
+:3:rocdevice.cpp            :284 : 251275189914 us:  Deleting hardware queue 0x7f24a0200000 with refCount 0

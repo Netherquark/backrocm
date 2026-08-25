@@ -1,0 +1,3 @@
+Cholesky factorization of A0 succeeded, which should not be the case since A0 is not positive semi-definite.
+hipSOLVER call finished successfully.
+Validation failed. Errors: 4
