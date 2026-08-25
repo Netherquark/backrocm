@@ -1,1 +1,0 @@
-./benchmark_all_src_v3.sh: line 107: /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/build/HIP-Basic/assembly_to_executable/main_gfx90c.o: cannot execute binary file: Exec format error
