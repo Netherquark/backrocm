@@ -1,0 +1,2 @@
+rocBLAS error from hip error code: 'hipErrorInvalidDeviceFunction':98
+hipBLAS error encountered: "HIPBLAS_STATUS_INTERNAL_ERROR" at /home/netherquark/Soham/Large_code/sources/GPU/rocm-examples/Libraries/hipBLAS/scal/main.hip:102

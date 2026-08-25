@@ -1,0 +1,16 @@
+SYEV converges.
+
+Given the n x n square input matrix A; we computed the linearly independent, orthonormal eigenvectors V and the associated eigenvalues W.
+A = [ 0.263076, 0.437918, 1.86939, 0.437918, 0.9173, 1.03883, 1.86939, 1.03883, 1.35773 ]
+W = [ 0, 0, 0 ]
+V = [ 0.263076, 0.437918, 1.86939, 0.437918, 0.9173, 1.03883, 1.86939, 1.03883, 1.35773 ]
+
+Let D be the diagonal constructed from W.
+The right multiplication of A * V should result in V * D [AV == VD]:
+AV = [ 3.75558, 2.45889, 3.48483, 2.45889, 2.11239, 3.18201, 3.48483, 3.18201, 6.41721 ]
+VD = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+
+Mean Square Error of [AV == VD]:
+  12.9309
+Validation failed. Errors: 9
+

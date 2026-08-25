@@ -1,0 +1,3 @@
+hipSOLVER call finished successfully.
+Required 0 iterations.
+Validation failed. Maximum element-wise error 3 is larger than allowed error 2.22045e-11

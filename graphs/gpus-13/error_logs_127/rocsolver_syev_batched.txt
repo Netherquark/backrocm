@@ -1,0 +1,53 @@
+===== batch no. 0=====
+SYEV converges.
+
+Given the n x n square input matrix A; we computed the orthonormal eigenvectors V and the associated eigenvalues W.
+A = [ 0.263076, 0.437918, 1.86939, 0.437918, 0.9173, 1.03883, 1.86939, 1.03883, 1.35773 ]
+W = [ 0, 0, 0 ]
+V = [ 0.263076, 0.437918, 1.86939, 0.437918, 0.9173, 1.03883, 1.86939, 1.03883, 1.35773 ]
+
+Let D be the diagonal constructed from W.
+The right multiplication of A * V should result in V * D [AV == VD]:
+AV = [ 3.75558, 2.45889, 3.48483, 2.45889, 2.11239, 3.18201, 3.48483, 3.18201, 6.41721 ]
+VD = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+
+Mean Square Error of [AV == VD]:
+  12.9309
+Number of errors: 9
+================
+===== batch no. 1=====
+SYEV converges.
+
+Given the n x n square input matrix A; we computed the orthonormal eigenvectors V and the associated eigenvalues W.
+A = [ 0.0691442, 0.0153964, 1.37355, 0.0153964, 1.0594, 1.86087, 1.37355, 1.86087, 0.133684 ]
+W = [ 0, 0, 0 ]
+V = [ 0.0691442, 0.0153964, 1.37355, 0.0153964, 1.0594, 1.86087, 1.37355, 1.86087, 0.133684 ]
+
+Let D be the diagonal constructed from W.
+The right multiplication of A * V should result in V * D [AV == VD]:
+AV = [ 1.89165, 2.57337, 0.307245, 2.57337, 4.58541, 2.24133, 0.307245, 2.24133, 5.36735 ]
+VD = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+
+Mean Square Error of [AV == VD]:
+  8.54368
+Number of errors: 9
+================
+===== batch no. 2=====
+SYEV converges.
+
+Given the n x n square input matrix A; we computed the orthonormal eigenvectors V and the associated eigenvalues W.
+A = [ 1.05386, 1.40238, 0.094929, 1.40238, 1.30784, 0.656468, 0.094929, 0.656468, 1.5244 ]
+W = [ 0, 0, 0 ]
+V = [ 1.05386, 1.40238, 0.094929, 1.40238, 1.30784, 0.656468, 0.094929, 0.656468, 1.5244 ]
+
+Let D be the diagonal constructed from W.
+The right multiplication of A * V should result in V * D [AV == VD]:
+AV = [ 3.0863, 3.37432, 1.16537, 3.37432, 4.10806, 1.9924, 1.16537, 1.9924, 2.76375 ]
+VD = [ 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+
+Mean Square Error of [AV == VD]:
+  7.49636
+Number of errors: 9
+================
+Validation failed. Errors: 27
+

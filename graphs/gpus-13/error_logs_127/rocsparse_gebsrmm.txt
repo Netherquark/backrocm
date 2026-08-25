@@ -1,0 +1,7 @@
+Solution successfully computed: 
+C =
+    (    0    0    0    0    0    0    0    0    0    0 )
+    (    0    0    0    0    0    0    0    0    0    0 )
+    (    0    0    0    0    0    0    0    0    0    0 )
+    (    0    0    0    0    0    0    0    0    0    0 )
+Validation failed. Errors: 40

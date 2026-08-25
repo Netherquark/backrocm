@@ -1,0 +1,2 @@
+terminate called after throwing an instance of 'rocrand_cpp::error'
+  what():  Kernel launch failure
