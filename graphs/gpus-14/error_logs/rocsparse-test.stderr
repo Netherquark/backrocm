@@ -1,0 +1,366 @@
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 75/321821 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+rocsparse_csritilu0_preprocess has detected 400727/400727 non-existent diagonal element.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+numerical pivot needed from rocsparse_csrilu0, skip the test.
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 4
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 3
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+WARNING near_check has been permissive with a tolerance multiplier equal to 2
+Error allocating 2458967808 bytes (2 GB)
+HW Exception by GPU node-1 (Agent handle: 0x557f5f0d8cf0) reason :GPU Hang
